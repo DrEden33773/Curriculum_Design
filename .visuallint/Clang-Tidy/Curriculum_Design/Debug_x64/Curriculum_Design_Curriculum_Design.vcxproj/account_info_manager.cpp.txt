@@ -1,0 +1,399 @@
+clang version 13.0.1
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: 
+clang version 13.0.1
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:\LLVM\bin
+clang Invocation:
+ "C:\\LLVM\\bin\\clang-tool" "-cc1" "-triple" "x86_64-pc-windows-msvc19.29.30130" "-fsyntax-only" "-disable-free" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "account_info_manager.cpp" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-fno-rounding-math" "-mconstructor-aliases" "-munwind-tables" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-v" "-fcoverage-compilation-dir=E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design" "-resource-dir" "C:\\LLVM\\lib\\clang\\13.0.1" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\include" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\VS\\include" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\um" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\shared" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\cppwinrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um" "-D" "_UNICODE" "-D" "UNICODE" "-D" "_MT" "-D" "_DLL" "-D" "_DEBUG" "-D" "_NATIVE_WCHAR_T_DEFINED" "-D" "_CPPUNWIND" "-D" "_WIN64" "-D" "_AMD64_" "-D" "_CONSOLE" "-internal-isystem" "C:\\LLVM\\lib\\clang\\13.0.1\\include" "-internal-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\include" "-internal-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt" "-Wmicrosoft" "-Wno-invalid-token-paste" "-fdeprecated-macro" "-fdebug-compilation-dir=E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design" "-ferror-limit" "19" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.29.30130" "-std=c++14" "-fdelayed-template-parsing" "-fcxx-exceptions" "-fexceptions" "-faddrsig" "-x" "c++" "E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design\\account_info_manager.cpp"
+
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\atlmfc\include"
+ignoring nonexistent directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\winrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\include
+ C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\VS\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\cppwinrt
+ C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um
+ C:\LLVM\lib\clang\13.0.1\include
+End of search list.
+111 warnings generated.
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:143:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<D0><D5><C3><FB>" << setw(7 + 3) << "<D3>û<A7><C3><FB>" << setw(14) << "<C3><DC><C2><EB>" << setw(10) << "ѧ<BA><C5>" << setw(9 + 4) << "<CB><DE><C9><E1><BA><C5>" << setw(3 + 4) << endl;
+             ^~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:143:39: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<D0><D5><C3><FB>" << setw(7 + 3) << "<D3>û<A7><C3><FB>" << setw(14) << "<C3><DC><C2><EB>" << setw(10) << "ѧ<BA><C5>" << setw(9 + 4) << "<CB><DE><C9><E1><BA><C5>" << setw(3 + 4) << endl;
+                                                  ^~~~ ~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:143:63: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<D0><D5><C3><FB>" << setw(7 + 3) << "<D3>û<A7><C3><FB>" << setw(14) << "<C3><DC><C2><EB>" << setw(10) << "ѧ<BA><C5>" << setw(9 + 4) << "<CB><DE><C9><E1><BA><C5>" << setw(3 + 4) << endl;
+                                                                                     ^~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:143:87: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<D0><D5><C3><FB>" << setw(7 + 3) << "<D3>û<A7><C3><FB>" << setw(14) << "<C3><DC><C2><EB>" << setw(10) << "ѧ<BA><C5>" << setw(9 + 4) << "<CB><DE><C9><E1><BA><C5>" << setw(3 + 4) << endl;
+                                                                                                                        ^~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:143:110: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<D0><D5><C3><FB>" << setw(7 + 3) << "<D3>û<A7><C3><FB>" << setw(14) << "<C3><DC><C2><EB>" << setw(10) << "ѧ<BA><C5>" << setw(9 + 4) << "<CB><DE><C9><E1><BA><C5>" << setw(3 + 4) << endl;
+                                                                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:151:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<D0><D5><C3><FB><A3><BA>" << cu_cache->real_name << setw(7 + 3)
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:152:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+         << "<D3>û<A7><C3><FB><A3><BA>" << cache->account << setw(14)
+             ^~~~ ~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:153:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+         << "<C3><DC><C2>�? << cache->password << setw(10)
+             ^~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:154:16: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+         << "ѧ<BA>ţ<BA>" << cu_cache->student_number << setw(9 + 4)
+              ^~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:155:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+         << "<CB><DE><C9><E1><BA>ţ<BA>" << cu_cache->dorm_number << setw(3 + 4) << endl;
+             ^~~~~~~~~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:162:20: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "д<C8><EB><B9><FD><B3><CC><D6>У<AC><B4><F2><BF><AA> account_info.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><D7>Զ<AF><CD>˳<F6><B3><CC><D0><F2>" << endl;
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~                   ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:168:20: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "д<C8><EB><B9><FD><B3><CC><D6>У<AC><B4><F2><BF><AA> user_list.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><D7>Զ<AF><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~                ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:180:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<C7><EB><CA><E4><C8><EB><C4><FA><CF><EB>Ҫɾ<B3><FD><B5><C4><D3>û<A7><B5><C4> [<D3>û<A7><C3><FB>] >> ";
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~  ~~~~ ~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:185:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<B2><BB><B4><E6><D4>ڸ<C3><D3>û<A7><C3><FB>" << endl
+                     ^~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:186:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                 << "<CA><E4><C8><EB>Y/y -> <D6><D8><D0><C2><CA><E4><C8><EB><D3>û<A7><C3><FB><A3><BB><CA><E4><C8><EB><C6><E4><CB><FB><D7>ַ<FB> -> <B7><B5><BB><D8> <D3>û<A7><D0><C5>Ϣ<B9><DC><C0><ED><BD><E7><C3><E6> >> ";
+                     ^~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    ~~~~~~~~~~~~~~~~ ~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:198:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<CA>Ƿ<F1>ȷ<C8><CF>ɾ<B3><FD> " << temp_user_name << " <D5><E2>һ<D3>û<A7><A3><BF>(ȷ<C8><CF><C7><EB><CA><E4><C8><EB>Y/y<A3><AC><B7><F1><D4><F2><CA><E4><C8><EB><C6><E4><CB><FB><D7>ַ<FB>) >> ";
+                 ^~~~ ~~~~ ~~~~~~~~ ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:198:56: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<CA>Ƿ<F1>ȷ<C8><CF>ɾ<B3><FD> " << temp_user_name << " <D5><E2>һ<D3>û<A7><A3><BF>(ȷ<C8><CF><C7><EB><CA><E4><C8><EB>Y/y<A3><AC><B7><F1><D4><F2><CA><E4><C8><EB><C6><E4><CB><FB><D7>ַ<FB>) >> ";
+                                                                      ^~~~~~~~ ~~~~ ~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:205:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<CA>յ<BD><A3><AC><B2><A2>δɾ<B3><FD><C8>κ<CE><D3>û<A7><A3><AC><BC><B4><BD><AB><BB>ص<BD><D3>û<A7><D0><C5>Ϣ<B9><DC><C0><ED><BD><E7><C3><E6>" << endl;
+                     ^~~~ ~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:217:20: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "ɾ<B3><FD><B9><FD><B3><CC><D6>У<AC><B4><B4><BD><A8><C1><D9>ʱ<CE>ļ<FE>ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~ ~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:223:20: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "ɾ<B3><FD><B9><FD><B3><CC><D6>У<AC><B4><F2><BF><AA> account_info.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~                   ~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:245:20: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "ɾ<B3><FD><B9><FD><B3><CC><D6>У<AC><B4><B4><BD><A8><C1><D9>ʱ<CE>ļ<FE>ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~ ~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:251:20: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "ɾ<B3><FD><B9><FD><B3><CC><D6>У<AC><B4><F2><BF><AA> user_list.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~                ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:271:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<B1><A7>Ǹ<A3><AC><C4><FA><CA><E4><C8><EB><B5><C4><D3>û<A7><B2><BB><B4><E6><D4>ڣ<A1>" << endl;
+             ^~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:276:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<CF><D6><D4>ڣ<AC><BD><AB>Ҫ<BD><F8><D0>о<AB>ȷ<B2><E9>ѯ ... " << endl;
+             ^~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~ ~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:283:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<C7><EB><CA><E4><C8><EB><CC>ض<A8><B5><C4><CA><FD><D7><D6><D2><D4>ָ<B6><A8>ģʽ [1->ѧ<BA>ž<AB>ȷ<CB><D1><CB><F7> 2-><D0><D5><C3><FB><BE><AB>ȷ<CB><D1><CB><F7> 3-><D3>û<A7><C3><FB><BE><AB>ȷ<CB><D1><CB><F7> 4-><CD>˳<F6><BE><AB>ȷ<CB><D1><CB><F7>] >> ";
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ~~~~ ~~~~ ~~~~~~~~~~~~~~~~    ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~    ~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~    ~~~~ ~~~~~~~~~~~~ ~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:287:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<CA><E4><C8><EB><CE><DE>Ч<A3><AC><C7><EB><D6><D8><D0><C2><CA><E4><C8>�? << endl;
+                     ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:290:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<C7><EB><CA><E4><C8><EB>Ҫ<BE><AB>ȷ<B2><E9>ѯ<B5><C4> ѧ<BA><C5> >> ";
+                         ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~ ~~~~~~~~  ~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:296:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<C7><EB><CA><E4><C8><EB>Ҫ<BE><AB>ȷ<B2><E9>ѯ<B5><C4> <D0><D5><C3><FB> >> ";
+                         ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:302:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<C7><EB><CA><E4><C8><EB>Ҫ<BE><AB>ȷ<B2><E9>ѯ<B5><C4> <D3>û<A7><C3><FB> >> ";
+                         ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~ ~~~~~~~~ ~~~~ ~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:311:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<BC><B4><BD><AB><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl;
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:318:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<D2><D1><CD><EA><B3>ɾ<AB>ȷ<CB><D1><CB><F7><A3><AC><BC><B4><BD><AB><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl;
+                 ^~~~~~~~~~~~~~~~~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:329:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<CA>Ƿ<F1><CF><D4>ʾ<D3>û<A7><B5><C4><C3><DC><C2>�? << endl
+             ^~~~ ~~~~~~~~~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:330:16: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+         << "( <CA><E4><C8><EB>Y/y => <CF><D4>ʾ || <CA><E4><C8><EB><C6><E4><CB><FC><C8><CE><D2><E2><B7>ǿ<D5><D7>ַ<FB> => <B2><BB><CF><D4>ʾ ) >> ";
+               ^~~~~~~~~~~~~~~~       ~~~~~~~~     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~    ~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:334:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+         << "<BC><B4><BD><AB><CF><D4>ʾ<CB><F9><D3><D0><D3>û<A7><B5><C4><CF><E0><B9><D8><D0><C5>Ϣ >> " << endl;
+             ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:336:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<D0><D5><C3><FB>" << setw(7 + 3) << "<D3>û<A7><C3><FB>" << setw(14) << "<C3><DC><C2><EB>" << setw(10) << "ѧ<BA><C5>" << setw(9 + 4) << "<CB><DE><C9><E1><BA><C5>" << setw(3 + 4) << endl;
+             ^~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:336:39: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<D0><D5><C3><FB>" << setw(7 + 3) << "<D3>û<A7><C3><FB>" << setw(14) << "<C3><DC><C2><EB>" << setw(10) << "ѧ<BA><C5>" << setw(9 + 4) << "<CB><DE><C9><E1><BA><C5>" << setw(3 + 4) << endl;
+                                                  ^~~~ ~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:336:63: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<D0><D5><C3><FB>" << setw(7 + 3) << "<D3>û<A7><C3><FB>" << setw(14) << "<C3><DC><C2><EB>" << setw(10) << "ѧ<BA><C5>" << setw(9 + 4) << "<CB><DE><C9><E1><BA><C5>" << setw(3 + 4) << endl;
+                                                                                     ^~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:336:87: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<D0><D5><C3><FB>" << setw(7 + 3) << "<D3>û<A7><C3><FB>" << setw(14) << "<C3><DC><C2><EB>" << setw(10) << "ѧ<BA><C5>" << setw(9 + 4) << "<CB><DE><C9><E1><BA><C5>" << setw(3 + 4) << endl;
+                                                                                                                        ^~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:336:110: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<D0><D5><C3><FB>" << setw(7 + 3) << "<D3>û<A7><C3><FB>" << setw(14) << "<C3><DC><C2><EB>" << setw(10) << "ѧ<BA><C5>" << setw(9 + 4) << "<CB><DE><C9><E1><BA><C5>" << setw(3 + 4) << endl;
+                                                                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:344:91: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << cu_cache->real_name << setw(7 + 3) << cache->account << setw(14) << "<<C3><DC><C2>�?D3><E8><CF><D4>ʾ>" << setw(10) << cu_cache->student_number << setw(9 + 4) << cu_cache->dorm_number << setw(3 + 4) << endl;
+                                                                                          ^~~~~~~~~~~~  ~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:348:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<CF><D4>ʾ<CD><EA><B1>ϣ<A1>" << endl;
+             ^~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:355:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<CF><D6><D4>ڣ<AC><BD><AB>Ҫ<BD><F8><D0><D0>ģ<BA><FD><B2><E9>ѯ ... " << endl;
+             ^~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:362:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<C7><EB><CA><E4><C8><EB><CC>ض<A8><B5><C4><CA><FD><D7><D6><D2><D4>ָ<B6><A8>ģʽ [1->ѧ<BA><C5>ģ<BA><FD><CB><D1><CB><F7> 2-><D0><D5><C3><FB>ģ<BA><FD><CB><D1><CB><F7> 3-><D3>û<A7><C3><FB>ģ<BA><FD><CB><D1><CB><F7> 4-><CD>˳<F6>ģ<BA><FD><CB><D1><CB><F7>] >> ";
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~    ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~    ~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~    ~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:366:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<CA><E4><C8><EB><CE><DE>Ч<A3><AC><C7><EB><D6><D8><D0><C2><CA><E4><C8>�? << endl;
+                     ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:369:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<C7><EB><CA><E4><C8><EB>Ҫ<BE><AB>ȷ<B2><E9>ѯ<B5><C4> ѧ<BA><C5> >> ";
+                         ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~ ~~~~~~~~  ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:375:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<C7><EB><CA><E4><C8><EB>Ҫ<BE><AB>ȷ<B2><E9>ѯ<B5><C4> <D0><D5><C3><FB> >> ";
+                         ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:381:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<C7><EB><CA><E4><C8><EB>Ҫ<BE><AB>ȷ<B2><E9>ѯ<B5><C4> <D3>û<A7><C3><FB> >> ";
+                         ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~ ~~~~~~~~ ~~~~ ~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:390:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<BC><B4><BD><AB><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl;
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:397:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<D2><D1><CD><EA><B3><C9>ģ<BA><FD><CB><D1><CB><F7><A3><AC><BC><B4><BD><AB><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl;
+                 ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:407:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<CA>Ƿ<F1>ȷ<B6><A8><CC><ED><BC><D3><D0><C2><D3>û<A7> (ȷ<B6><A8><D4><F2><CA><E4><C8><EB>Y/y<A3><AC><B7><F1><D4><F2><CA><E4><C8><EB><C6><E4><CB><FB><D7>ַ<FB>) >> ";
+             ^~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:414:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<BC><B4><BD><AB><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl;
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:426:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<C7><EB><CA><E4><C8><EB><CF><EB>Ҫ<D0><U+07B8><C4><D0><C5>Ϣ<B5><C4>[<D3>û<A7><C3><FB>] >> ";
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~        ~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:429:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<CA><E4><C8><EB><B5><C4><D3>û<A7><B2><BB><B4><E6><D4>ڣ<A1><C8><F4><CF><EB><D6><D8><D0><C2><CA><E4><C8><EB><D0><C5>Ϣ<A3><AC><C7><EB><CA><E4><C8><EB>Y/y<A3><AC><B7><F1><D4><F2><CA><E4><C8><EB><C6><E4><CB><FB><D7>ַ<FB> >> ";
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:433:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<CA>յ<BD><A3><AC><BC><B4><BD><AB><B7><B5><BB><D8><<D0><C5>Ϣ<D0><U+07B8><C4>><BD><E7><C3><E6> ... " << endl;
+                         ^~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~        ~~~~ ~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:437:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<CA>յ<BD><A3><AC><BC><B4><BD><AB><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl;
+                         ^~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:447:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<B3>ɹ<A6><BC><EC><CB><F7><B5><BD><D3>û<A7><B5><C4><D0><C5>Ϣ<A3><A1><BD><D3><CF><C2><C0><B4><CF><D4>ʾ[ѡ<CF><EE>]<A3><BA>" << endl;
+                 ^~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~ ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:449:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<B5><B1>ǰ **<B4><FD><D0><U+07B8>ĵ<C4><D3>û<A7>** <CA><C7> >> " << temp_user_name << endl;
+                     ^~~~~~~~    ~~~~~~~~~~~~         ~~~~~~~~ ~~~~   ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:451:36: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << setw(6) << "1. <D0><U+07B8><C4> <D3>û<A7> <B5><C4> <C3><DC><C2><EB>" << endl;
+                                   ^~~~        ~~~~ ~~~~ ~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:452:36: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << setw(6) << "2. <D0><U+07B8><C4> <D3>û<A7> <B5><C4> <D0><D5><C3><FB>" << endl;
+                                   ^~~~        ~~~~ ~~~~ ~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:453:36: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << setw(6) << "3. <D0><U+07B8><C4> <D3>û<A7> <B5><C4> ѧ<BA><C5>" << endl;
+                                   ^~~~        ~~~~ ~~~~ ~~~~ ~~~~~~~~  ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:454:36: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << setw(6) << "4. <D0><U+07B8><C4> <D3>û<A7> <B5><C4> <CB><DE><C9><E1><BA><C5>" << endl;
+                                   ^~~~        ~~~~ ~~~~ ~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:455:36: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << setw(6) << "5. <D4>ٴ<CE><CF><D4>ʾ <B1><BE><B2>˵<A5>" << endl;
+                                   ^~~~ ~~~~~~~~~~~~  ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:456:36: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << setw(6) << "6. <B7><B5><BB><D8> <C9><CF>һ<BC><B6><B2>˵<A5>" << endl;
+                                   ^~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:458:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<C7><EB><CA><E4><C8><EB><B6><D4>Ӧ<B5><C4><CA><FD><D7><D6> >> ";
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:471:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<D4>ٴ<CE><CF><D4>ʾѡ<CF><EE>" << endl
+                         ^~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:474:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<CA>յ<BD><A3><AC><BC><B4><BD><AB><B7><B5><BB><D8> [<B9><DC><C0><ED>Ա<BD><E7><C3><E6>] ... " << endl;
+                         ^~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:480:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<B6><D4>Ӧ<B9><A6><C4><DC>δ<BF><AA><B7><A2><A3><A1><D4>ٴ<CE><CF><D4>ʾ[ѡ<CF><EE>] ... " << endl
+                         ^~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~   ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:491:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<C7><EB>ע<D2>⣬�?B9><FD>{<B9><DC><C0><ED>Ա}<D0><U+07B8><C4><C3><DC><C2><EB>ʱ<A3><AC><B2><A2><B2><BB><BB><E1><D0><U+07B8><C4><CF><D6><D3>е<C4> <ƾ<BE><DD><C2><EB>> ... " << endl;
+             ^~~~~~~~ ~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~  ~~~~        ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ~~~~~~~~~~~~~~~~ ~~~~   ~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:493:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<C7><EB><D4><DA><CF><C2>һ<D0><D0><CA><E4><C8><EB><D0><U+07B8>ĺ<F3><B5><C4><C3><DC><C2><EB> (<B7><C5><C6><FA><D0><U+07B8><C4><C7><EB><CA><E4><C8><EB>-1) (<C3><DC><C2>�?B6><C8>Ӧ<B4><F3><D3><DA>8λ<C7><D2><D6><C1><C9>ٰ<FC><BA><AC>һ<B8><F6>Ӣ<CE><C4><D7><D6>ĸ)" << endl;
+             ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~     ~~~~~~~~~~~~  ~~~~~~~~ ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:497:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<CA>յ<BD><A3><AC>û<D3><D0>ִ<D0><D0><C8>κ<CE><D0><U+07B8>ģ<AC><D7>Զ<AF><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl
+                 ^~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~         ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:500:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<D4><D9><CA><E4><C8><EB>һ<B8><F6>{<C8><CE><D2><E2><B7>ǿ<D5><D7>ַ<FB>}<BA><F3><A3><AC>ϵͳ<BD><AB><CD><EA><B3><C9><D0><U+07B8><C4>" << endl;
+                 ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:506:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<D0><U+07B8><C4><D0><C5>Ϣ<BD><U+05F6>Σ<AC><B4><F2><BF><AA> account_info.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                     ^~~~        ~~~~~~~~~~~~ ~~~~         ~~~~~~~~~~~~~~~~~~~~                   ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:521:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<D0><U+07B8><C4><D0><C5>Ϣ<BD><U+05F6>Σ<AC><B4><F2><BF><AA> account_info.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                     ^~~~        ~~~~~~~~~~~~ ~~~~         ~~~~~~~~~~~~~~~~~~~~                   ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:525:9: warning: 1st function call argument is an uninitialized value [clang-analyzer-core.CallAndMessage]
+        file.seekp(POS, ios::beg);
+        ^          ~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:496:9: note: Assuming the condition is false
+    if (temp_password == "-1") {
+        ^~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:496:5: note: Taking false branch
+    if (temp_password == "-1") {
+    ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:499:16: note: Assuming the condition is true
+    } else if (if_password_legal(temp_password)) {
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:499:12: note: Taking true branch
+    } else if (if_password_legal(temp_password)) {
+           ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:503:9: note: 'POS' declared without an initial value
+        int POS;
+        ^~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:505:9: note: Taking false branch
+        if (!file.is_open()) {
+        ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:511:9: note: Loop condition is false. Execution continues on line 517
+        while (file.read((char*)(cache), sizeoE:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:520:9: note: Taking false branch
+        if (!file.is_open()) {
+        ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:525:9: note: 1st function call argument is an uninitialized value
+        file.seekp(POS, ios::beg);
+        ^          ~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:528:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<C4><FA><B5><B1>ǰ<D0><U+07B8>ĵ<C4><D3>û<A7><A3><AC><C6><E4> <ƾ<BE><DD><C2><EB>> <CA><C7> >>" << cache->sp_code << " <A3><AC><C7><EB><CC><E1><D0>Ѹ<C3><D3>û<A7><C0>μǣ<A1>" << endl;
+                 ^~~~~~~~~~~~~~~~ ~~~~         ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~  ~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:528:78: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<C4><FA><B5><B1>ǰ<D0><U+07B8>ĵ<C4><D3>û<A7><A3><AC><C6><E4> <ƾ<BE><DD><C2><EB>> <CA><C7> >>" << cache->sp_code << " <A3><AC><C7><EB><CC><E1><D0>Ѹ<C3><D3>û<A7><C0>μǣ<A1>" << endl;
+                                                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~  ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:529:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<D4><D9><CA><E4><C8><EB>һ<B8><F6>{<C8><CE><D2><E2><B7>ǿ<D5><D7>ַ<FB>}<BA><F3><A3><AC>ϵͳ<BD><AB><CD><EA><B3><C9><C3><DC><C2><EB><D0><U+07B8><C4> ... ";
+                 ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:533:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<B3>ɹ<A6><D0><U+07B8><C4><C3><DC><C2>�?BC><B4><BD><AB><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl
+                 ^~~~ ~~~~~~~~        ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:536:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<C4><FA><CA><E4><C8><EB><B5><C4>[<D0><C2><C3><DC><C2><EB>]<B2><A2><B2><BB><BA>Ϸ<A8><A3><A1><D7>Զ<AF><B7><C5><C6><FA><D0><U+07B8>ģ<AC><B2><A2><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:545:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<C7><EB><CA><E4><C8><EB><D0><C2><D0><D5><C3><FB>(<B7><C5><C6><FA><D0><U+07B8><C4><C7><EB><CA><E4><C8><EB>-1) >> ";
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:548:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<CA>յ<BD><A3><AC>û<D3><D0>ִ<D0><D0><C8>κ<CE><D0><U+07B8>ģ<AC><D7>Զ<AF><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl
+                 ^~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~         ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:551:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<D4><D9><CA><E4><C8><EB>һ<B8><F6>{<C8><CE><D2><E2><B7>ǿ<D5><D7>ַ<FB>}<BA><F3><A3><AC>ϵͳ<BD><AB><CD><EA><B3><C9><D0><U+07B8><C4>" << endl;
+                 ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:557:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<D0><U+07B8><C4><D0><C5>Ϣ<BD><U+05F6>Σ<AC><B4><F2><BF><AA> user_list.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                     ^~~~        ~~~~~~~~~~~~ ~~~~         ~~~~~~~~~~~~~~~~~~~~                ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:572:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<D0><U+07B8><C4><D0><C5>Ϣ<BD><U+05F6>Σ<AC><B4><F2><BF><AA> user_list.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                     ^~~~        ~~~~~~~~~~~~ ~~~~         ~~~~~~~~~~~~~~~~~~~~                ~~~~ ~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:576:9: warning: 1st function call argument is an uninitialized value [clang-analyzer-core.CallAndMessage]
+        file.seekp(POS, ios::beg);
+        ^          ~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:547:9: note: Assuming the condition is false
+    if (temp_real_name == "-1") {
+        ^~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:547:5: note: Taking false branch
+    if (temp_real_name == "-1") {
+    ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:554:9: note: 'POS' declared without an initial value
+        int POS;
+        ^~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:556:9: note: Taking false branch
+        if (!file.is_open()) {
+        ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:562:9: note: Loop condition is false. Execution continues on line 568
+        while (file.read((char*)(cu_cache), sizeof(current_user_info))) {
+        ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:571:9: note: Taking false branch
+        if (!file.is_open()) {
+        ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:576:9: note: 1st function call argument is an uninitialized value
+        file.seekp(POS, ios::beg);
+        ^          ~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:580:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<B3>ɹ<A6><D0><U+07B8><C4><D0><D5><C3><FB><A3><A1><BC><B4><BD><AB><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl
+                 ^~~~ ~~~~~~~~        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:589:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<C7><EB><CA><E4><C8><EB><D0><C2>ѧ<BA><C5>(<B7><C5><C6><FA><D0><U+07B8><C4><C7><EB><CA><E4><C8><EB>-1) >> ";
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:592:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<CA>յ<BD><A3><AC>û<D3><D0>ִ<D0><D0><C8>κ<CE><D0><U+07B8>ģ<AC><D7>Զ<AF><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl
+                 ^~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~         ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:595:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<D4><D9><CA><E4><C8><EB>һ<B8><F6>{<C8><CE><D2><E2><B7>ǿ<D5><D7>ַ<FB>}<BA><F3><A3><AC>ϵͳ<BD><AB><CD><EA><B3><C9><D0><U+07B8><C4>" << endl;
+                 ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:601:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<D0><U+07B8><C4><D0><C5>Ϣ<BD><U+05F6>Σ<AC><B4><F2><BF><AA> user_list.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                     ^~~~        ~~~~~~~~~~~~ ~~~~         ~~~~~~~~~~~~~~~~~~~~                ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:616:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<D0><U+07B8><C4><D0><C5>Ϣ<BD><U+05F6>Σ<AC><B4><F2><BF><AA> user_list.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                     ^~~~        ~~~~~~~~~~~~ ~~~~         ~~~~~~~~~~~~~~~~~~~~                ~~~~ ~~~~~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:620:9: warning: 1st function call argument is an uninitialized value [clang-analyzer-core.CallAndMessage]
+        file.seekp(POS, ios::beg);
+        ^          ~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:591:9: note: Assuming the condition is false
+    if (temp_student_number == "-1") {
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:591:5: note: Taking false branch
+    if (temp_student_number == "-1") {
+    ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:598:9: note: 'POS' declared without an initial value
+        int POS;
+        ^~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:600:9: note: Taking false branch
+        if (!file.is_open()) {
+        ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:606:9: note: Loop condition is false. Execution continues on line 612
+        while (file.read((char*)(cu_cache), sizeof(current_user_info))) {
+        ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:615:9: note: Taking false branch
+        if (!file.is_open()) {
+        ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:620:9: note: 1st function call argument is an uninitialized value
+        file.seekp(POS, ios::beg);
+        ^          ~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:624:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<B3>ɹ<A6><D0><U+07B8><C4>ѧ<BA>ţ<A1><BC><B4><BD><AB><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl
+                 ^~~~ ~~~~~~~~        ~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:633:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<C7><EB><CA><E4><C8><EB><D0><C2><CB><DE><C9><E1><BA><C5>(<B7><C5><C6><FA><D0><U+07B8><C4><C7><EB><CA><E4><C8><EB>-1) >> ";
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:636:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<CA>յ<BD><A3><AC>û<D3><D0>ִ<D0><D0><C8>κ<CE><D0><U+07B8>ģ<AC><D7>Զ<AF><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl
+                 ^~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~         ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:639:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<D4><D9><CA><E4><C8><EB>һ<B8><F6>{<C8><CE><D2><E2><B7>ǿ<D5><D7>ַ<FB>}<BA><F3><A3><AC>ϵͳ<BD><AB><CD><EA><B3><C9><D0><U+07B8><C4>" << endl;
+                 ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:645:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<D0><U+07B8><C4><D0><C5>Ϣ<BD><U+05F6>Σ<AC><B4><F2><BF><AA> user_list.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                     ^~~~        ~~~~~~~~~~~~ ~~~~         ~~~~~~~~~~~~~~~~~~~~                ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:660:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<D0><U+07B8><C4><D0><C5>Ϣ<BD><U+05F6>Σ<AC><B4><F2><BF><AA> user_list.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2> ... " << endl;
+                     ^~~~        ~~~~~~~~~~~~ ~~~~         ~~~~~~~~~~~~~~~~~~~~                ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:668:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<B3>ɹ<A6><D0><U+07B8><C4><CB><DE><C9><E1><BA>ţ<A1><BC><B4><BD><AB><B7><B5><BB><D8><C9><CF>һ<BC><B6><B2>˵<A5> ... " << endl
+                 ^~~~ ~~~~~~~~        ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:676:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<BB><B6>ӭʹ<D3><C3> <<D3>û<A7><D0><C5>Ϣ<B9><DC><C0><ED>ģ<BF><E9>> , <CF><C2><C3><E6><CF><D4>ʾ [<BF><C9><D3>ù<A6><C4><DC><C1>б<ED>] >> " << endl;
+             ^~~~~~~~  ~~~~~~~~  ~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~    ~~~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:679:35: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << setw(6) << "1.չʾ<CB><F9><D3>е<C4> <D3>û<A7><D0><C5>Ϣ" << endl;
+                        E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:680:33: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << setw(6) << "2.ģ<BA><FD><CB><D1><CB><F7> <D3>û<A7><D0><C5>Ϣ (֧<B3><D6><D3><C3> ѧ<BA><C5>/<D0><D5><C3><FB>/<D3>û<A7><C3><FB> <CB><D1><CB><F7>)" << endl;
+                               ^~~~~~~~~~~~~~~~~~~~~~~~ ~~~~ ~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~  ~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:681:31: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << setw(6) << "3.<BE><AB>ȷ<CB><D1><CB><F7> <D3>û<A7><D0><C5>Ϣ (֧<B3><D6><D3><C3> ѧ<BA><C5>/<D0><D5><C3><FB>/<D3>û<A7><C3><FB> <CB><D1><CB><F7>)" << endl;
+                              ^~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~ ~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~  ~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~ ~~~~~~~~~~~~ ~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:682:31: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << setw(6) << "4.<D0><U+07B8><C4> ĳ<B8><F6><CC>ض<A8><D3>û<A7><B5><C4> <CC>ض<A8><D0><C5>Ϣ (֧<B3><D6><D0><U+07B8><C4> <C3><DC><C2><EB>/ѧ<BA><C5>/<D0><D5><C3><FB>/<CB><DE><C9><E1><BA><C5>)" << endl;
+                              ^~~~        ~~~~  ~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~ ~~~~ ~~~~~~~~~~~~   ~~~~~~~~~~~~        ~~~~ ~~~~~~~~~~~~~~~~  ~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:683:33: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << setw(6) << "5.ɾ<B3><FD> ĳ<B8><F6><CC>ض<A8><D3>û<A7><B5><C4> <CB><F9><D3><D0><D0><C5>Ϣ" << endl;
+                               ^~~~~~~~  ~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:684:31: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << setw(6) << "6.<D4>ٴ<CE><CF><D4>ʾ [<BF><C9><D3>ù<A6><C4><DC><C1>б<ED>]" << endl;
+                              ^~~~ ~~~~~~~~~~~~   ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:685:31: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << setw(6) << "7.<B7><B5><BB><D8> [<B9><DC><C0><ED>Ա<BD><E7><C3><E6>]" << endl;
+                              ^~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:687:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<C7><EB><CA><E4><C8><EB><CF><E0>Ӧ<B5><C4><CA><FD><D7><D6> >> ";
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:702:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<D4>ٴ<CE><CF><D4>ʾ [<BF><C9><D3>ù<A6><C4>ܲ˵<A5>] ... " << endl;
+                     ^~~~ ~~~~~~~~~~~~   ~~~~~~~~~~~~ ~~~~~~~~ ~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:705:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<BC><B4><BD><AB><B7><B5><BB><D8> [<B9><DC><C0><ED>Ա<BD><E7><C3><E6>] ... " << endl;
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp:709:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<B8>ù<A6><C4><DC><C9><D0>δ<B1><BB><BF><AA><B7><A2><A3><A1><BC><B4><BD><AB><D4>ٴ<CE><CF><D4>ʾ [<BF><C9><D3>ù<A6><C4>ܲ˵<A5>] ... " << endl;
+                     ^~~~ ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~   ~~~~~~~~~~~~ ~~~~~~~~

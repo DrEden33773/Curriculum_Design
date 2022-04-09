@@ -1,0 +1,71 @@
+clang version 13.0.1
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: 
+clang version 13.0.1
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:\LLVM\bin
+clang Invocation:
+ "C:\\LLVM\\bin\\clang-tool" "-cc1" "-triple" "x86_64-pc-windows-msvc19.29.30130" "-fsyntax-only" "-disable-free" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "admin_AccountInfoReceiver.cpp" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-fno-rounding-math" "-mconstructor-aliases" "-munwind-tables" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-v" "-fcoverage-compilation-dir=E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design" "-resource-dir" "C:\\LLVM\\lib\\clang\\13.0.1" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\include" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\VS\\include" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\um" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\shared" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\cppwinrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um" "-D" "_UNICODE" "-D" "UNICODE" "-D" "_MT" "-D" "_DLL" "-D" "_DEBUG" "-D" "_NATIVE_WCHAR_T_DEFINED" "-D" "_CPPUNWIND" "-D" "_WIN64" "-D" "_AMD64_" "-D" "_CONSOLE" "-internal-isystem" "C:\\LLVM\\lib\\clang\\13.0.1\\include" "-internal-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\include" "-internal-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt" "-Wmicrosoft" "-Wno-invalid-token-paste" "-fdeprecated-macro" "-fdebug-compilation-dir=E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design" "-ferror-limit" "19" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.29.30130" "-std=c++14" "-fdelayed-template-parsing" "-fcxx-exceptions" "-fexceptions" "-faddrsig" "-x" "c++" "E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design\\admin_AccountInfoReceiver.cpp"
+
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\atlmfc\include"
+ignoring nonexistent directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\winrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\include
+ C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\VS\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\cppwinrt
+ C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um
+ C:\LLVM\lib\clang\13.0.1\include
+End of search list.
+14 warnings generated.
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:58:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<B5><DA>һ<B4><CE>ʹ<D3><C3> "
+                     ^~~~~~~~ ~~~~~~~~ ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:60:23: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                 << " <D5><E2><B8><F6><D5>˺ţ<AC><C9>Ե<C8>Ƭ<BF>̣<AC><C7>�?D5><D5><CC><E1>ʾ<CC><EE><C8><EB><D5><E6>ʵ<C7><D2><D5><FD>ȷ<B5><C4><D0><C5>Ϣ<A3><BA>"
+                      ^~~~~~~~~~~~~~~~~~~~  ~~~~~~~~ ~~~~ ~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:70:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<C7><EB><CA><E4><C8><EB><B7>ֹ<DC>ѧԺ<B5>Ĵ<FA><BA>ţ<BA>";
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~ ~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:74:30: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                    cout << "<C7><EB><D4>ٴ<CE><CA><E4><C8><EB><C4><E3> (<B8>ո<D5><CA><E4><C8><EB><B5><C4>) <B7>ֹ<DC>ѧԺ<B5>Ĵ<FA><BA>ţ<BA>";
+                             ^~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~  ~~~~ ~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:80:34: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                        cout << "<C1><BD><B4><CE><CA><E4><C8><EB><B5>Ĵ<FA><BA>Ų<BB>ͬ" << endl
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:81:34: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                             << "<CA><E4><C8><EB>A/a -> <D4>ٴ<CE><CA><E4><C8><EB><D7><EE><B3><F5><CA><E4><C8><EB><B5>Ĵ<FA><BA><C5>"
+                                 ^~~~~~~~~~~~~~~~       ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:82:34: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                             << "<CA><E4><C8><EB><C6><E4><CB><FB><C4><DA><C8><DD> -> <D6><D8><D0><C2>ָ<B6><A8><B4><FA><BA><C5> >>> ";
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:86:38: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                            cout << "<C9>Ե<C8>Ƭ<BF>̣<AC><U+05FC><B1><B8> [<D4>ٴ<CE><CA><E4><C8><EB><D7><EE><B3><F5><CA><E4><C8><EB><B5>Ĵ<FA><BA><C5>]" << endl;
+                                     ^~~~ ~~~~ ~~~~~~~~        ~~~~~~~~  ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:90:38: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                            cout << "<C9>Ե<C8>Ƭ<BF>̣<AC><U+05FC><B1><B8> [<D6><D8><D0><C2>ָ<B6><A8><B4><FA><BA><C5>]" << endl;
+                                     ^~~~ ~~~~ ~~~~~~~~        ~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:100:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<C7><EB> ==<D7><EE><BA><F3>һ<B4><CE>== ȷ<C8><CF><C4><E3><CA><E4><C8><EB><B5>ı<D8>Ҫ<D0><C5>Ϣ<A3><BA>" << endl
+                         ^~~~~~~~   ~~~~~~~~~~~~~~~~ ~~~~~~~~    ~~~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:104:28: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "  <B7>ֹ<DC>ѧԺ<B4><FA><BA>ţ<BA>  " << setw(5) << temp_profession_code << endl;
+                           ^~~~~~~~  ~~~~~~~~~~~~ ~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:107:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<CA>Ƿ<F1><D5><FD>ȷ<A3><BF><D5><FD>ȷ<C7><EB><CA><E4><C8><EB>Y/y<A3><AC><B2><BB><D5><FD>ȷ<C7><EB><CA><E4><C8><EB><C6><E4><CB><FB><C8><CE><D2><E2><B7>ǿ<D5><D7>ַ<FB>(<C9>Ժ<F3><BD><AB><D7>Զ<AF><D6><D8><D0><C2><D2><FD><B5><BC><C4><FA><CA><E4><C8><EB> <B7>ֹ<DC>ѧԺ<B4><FA><BA><C5>) >>> ";
+                         ^~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~  ~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:114:30: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                    cout << "<C7><EB><C9>Ժ<F3><A3><AC>ϵͳ<BD><AB><D7>Զ<AF><D6><D8><D0><C2><D2><FD><B5><BC><C4><FA><CA><E4><C8><EB> <B7>ֹ<DC>ѧԺ<B4><FA><BA><C5>" << endl;
+                             ^~~~~~~~~~~~ ~~~~~~~~~~~~  ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~  ~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp:123:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<D2>ѳɹ<A6><CA><E4><C8><EB> [<B1><D8>Ҫ<D0><C5>Ϣ]<A3><AC><C9>Ե<C8>Ƭ<BF>̽<AB><BD><F8><C8><EB> <<B9><DC><C0><ED>Ա<BD><E7><C3><E6>>" << endl;
+                 ^~~~  ~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~ ~~~~~~~~  ~~~~~~~~~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~ ~~~

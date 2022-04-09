@@ -1,0 +1,29 @@
+---
+MainSourceFile:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\main.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching constructor for initialization of ''user_info_receiver'''
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\main.cpp'
+      FileOffset:      824
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\main.cpp'
+          FileOffset:      841
+          Length:          35
+    Notes:
+      - Message:         'candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided'
+        FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design/user_AccountInfoReceiver.h'
+        FileOffset:      287
+        Replacements:    []
+      - Message:         'candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided'
+        FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design/user_AccountInfoReceiver.h'
+        FileOffset:      287
+        Replacements:    []
+      - Message:         'candidate constructor not viable: requires 0 arguments, but 2 were provided'
+        FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design/user_AccountInfoReceiver.h'
+        FileOffset:      1606
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+...

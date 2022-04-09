@@ -1,0 +1,10 @@
+^E:\VS_CPP_PROJECTS\CURRICULUM_DESIGN\CMAKELISTS.TXT
+setlocal
+C:\CMake\bin\cmake.exe -SE:/VS_cpp_projects/Curriculum_Design -BE:/VS_cpp_projects/Curriculum_Design/build --check-stamp-file E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

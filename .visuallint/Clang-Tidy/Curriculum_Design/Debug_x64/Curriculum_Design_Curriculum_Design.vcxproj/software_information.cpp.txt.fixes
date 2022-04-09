@@ -1,0 +1,74 @@
+---
+MainSourceFile:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+      FileOffset:      777
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      777
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      778
+          Length:          3
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      807
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      810
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      811
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      812
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      813
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      814
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      815
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      818
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      819
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+          FileOffset:      822
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDeleteLeaks
+    DiagnosticMessage:
+      Message:         'Potential leak of memory pointed to by ''cached_info'''
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+      FileOffset:      1584
+      Replacements:    []
+    Notes:
+      - Message:         Memory is allocated
+        FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+        FileOffset:      1200
+        Replacements:    []
+        Ranges:
+          - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+            FileOffset:      1200
+            Length:          8
+      - Message:         Taking true branch
+        FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+        FileOffset:      1318
+        Replacements:    []
+      - Message:         'Potential leak of memory pointed to by ''cached_info'''
+        FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp'
+        FileOffset:      1584
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+...

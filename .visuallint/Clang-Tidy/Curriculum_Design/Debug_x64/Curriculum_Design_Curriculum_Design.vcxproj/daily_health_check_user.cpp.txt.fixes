@@ -1,0 +1,1276 @@
+---
+MainSourceFile:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      928
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      928
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      929
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      930
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      931
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      932
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      933
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      937
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      938
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      939
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      940
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      945
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      946
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      949
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      950
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      951
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      954
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      958
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      959
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      962
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      965
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      966
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      967
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      968
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      969
+          Length:          3
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      976
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      977
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      979
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      980
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      981
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      982
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      984
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      985
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      990
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      991
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      992
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      993
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      994
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      995
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      996
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      999
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      1000
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      2048
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2048
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2049
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2050
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2051
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2052
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2053
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2054
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2057
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2058
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2061
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2062
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2063
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2067
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2068
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      2519
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2519
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2520
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2521
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2522
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2524
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2525
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2528
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2529
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2530
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2533
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2534
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2535
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2536
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2537
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2538
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2539
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2540
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2548
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2549
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2550
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2551
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2552
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2555
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2556
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2557
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2564
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2565
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2568
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      2803
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2803
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2804
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2805
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2806
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2807
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2808
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2809
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2812
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2818
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      2819
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      3221
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3221
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3222
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3223
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3224
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3226
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3227
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3230
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3231
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3232
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3235
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3236
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3237
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3238
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3239
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3240
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3241
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3242
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3250
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3251
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3252
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3253
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3254
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3257
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3258
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3259
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3266
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3267
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3270
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      3400
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3400
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3401
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3402
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3403
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3404
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3405
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3407
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3408
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3409
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3410
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3411
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3412
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3419
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3423
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3424
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3426
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3427
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      3813
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3813
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3814
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3815
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3816
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3818
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3819
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3822
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3823
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3824
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3827
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3828
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3829
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3830
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3831
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3832
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3833
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3834
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3842
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3843
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3844
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3845
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3846
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3849
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3850
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3851
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3858
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3859
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      3862
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      4084
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4084
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4085
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4086
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4089
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4090
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4093
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4094
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4095
+          Length:          3
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4098
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4099
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4102
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4105
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4106
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4107
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4109
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4112
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4113
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4116
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4117
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4118
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4123
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4124
+          Length:          4
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4128
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4131
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4132
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      4170
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4170
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4173
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4177
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4178
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4179
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4182
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4183
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4184
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4185
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4186
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4187
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4188
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4191
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4192
+          Length:          4
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4196
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4199
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4206
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4211
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4212
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4213
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4214
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4215
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4216
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4217
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4220
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4221
+          Length:          4
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4225
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4228
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4235
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4236
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4239
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4242
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4243
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4246
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4247
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4248
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4249
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4250
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4251
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4252
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4253
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      4256
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      5127
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5127
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5128
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5129
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5130
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5132
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5133
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5136
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5137
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5138
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5141
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5142
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5143
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5144
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5145
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5146
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5147
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5148
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5156
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5157
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5158
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5159
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5160
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5163
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5164
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5165
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5172
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5173
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5176
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      5429
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5429
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5430
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5433
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5434
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5437
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5438
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5439
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5440
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5441
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5446
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5449
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5452
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5453
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5454
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5455
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5456
+          Length:          3
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5463
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5464
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5465
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5466
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5468
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5471
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5474
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5475
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5476
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5477
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5482
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5483
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5484
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5485
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5486
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5489
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5490
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5493
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5494
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5499
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      5607
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5607
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5608
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5609
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5610
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5611
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5614
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5615
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5618
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5620
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5621
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5624
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5628
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      5629
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      6015
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6015
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6016
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6017
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6018
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6020
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6021
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6024
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6025
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6026
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6029
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6030
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6031
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6032
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6033
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6034
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6035
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6036
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6044
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6045
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6046
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6047
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6048
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6051
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6052
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6053
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6060
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6061
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6064
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      6273
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6273
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6274
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6275
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6276
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6277
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6278
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6280
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6285
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6288
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6289
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6290
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6291
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6292
+          Length:          3
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6297
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6298
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6299
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6300
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6303
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6304
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6306
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6307
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6308
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6312
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+      FileOffset:      6529
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6529
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6530
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6535
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6536
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6542
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6543
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6544
+          Length:          3
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6569
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6572
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6573
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6574
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6575
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6576
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6577
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6580
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6582
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6583
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp'
+          FileOffset:      6584
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+...

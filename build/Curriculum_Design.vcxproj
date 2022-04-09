@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|arm64">
+      <Configuration>Debug</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|arm64">
+      <Configuration>Release</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|arm64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|arm64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{762E2439-217E-3259-9961-B569804C79B8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>arm64</Platform>
+    <ProjectName>Curriculum_Design</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">Curriculum_Design.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">Curriculum_Design</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">Curriculum_Design.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">Curriculum_Design</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">Curriculum_Design.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">Curriculum_Design</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">Curriculum_Design.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">Curriculum_Design</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/VS_cpp_projects/Curriculum_Design/build/Debug/Curriculum_Design.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/VS_cpp_projects/Curriculum_Design/build/Debug/Curriculum_Design.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/VS_cpp_projects/Curriculum_Design/build/Release/Curriculum_Design.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/VS_cpp_projects/Curriculum_Design/build/Release/Curriculum_Design.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/VS_cpp_projects/Curriculum_Design/build/MinSizeRel/Curriculum_Design.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/VS_cpp_projects/Curriculum_Design/build/MinSizeRel/Curriculum_Design.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:ARM64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/VS_cpp_projects/Curriculum_Design/build/RelWithDebInfo/Curriculum_Design.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/VS_cpp_projects/Curriculum_Design/build/RelWithDebInfo/Curriculum_Design.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\VS_cpp_projects\Curriculum_Design\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">setlocal
+C:\CMake\bin\cmake.exe -SE:/VS_cpp_projects/Curriculum_Design -BE:/VS_cpp_projects/Curriculum_Design/build --check-stamp-file E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">setlocal
+C:\CMake\bin\cmake.exe -SE:/VS_cpp_projects/Curriculum_Design -BE:/VS_cpp_projects/Curriculum_Design/build --check-stamp-file E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">setlocal
+C:\CMake\bin\cmake.exe -SE:/VS_cpp_projects/Curriculum_Design -BE:/VS_cpp_projects/Curriculum_Design/build --check-stamp-file E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">setlocal
+C:\CMake\bin\cmake.exe -SE:/VS_cpp_projects/Curriculum_Design -BE:/VS_cpp_projects/Curriculum_Design/build --check-stamp-file E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account.cpp" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account.h" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.h" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_interface.cpp" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_interface.h" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\main.cpp" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.h" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\user_AccountInfoReceiver.cpp" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\user_AccountInfoReceiver.h" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\user_interface.cpp" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\user_interface.h" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\province_information_manager.h" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\province_information_manager.cpp" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_admin.h" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_admin.cpp" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.h" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.h" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check.h" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check.cpp" />
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\time_manager.cpp" />
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\time_manager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\VS_cpp_projects\Curriculum_Design\build\ZERO_CHECK.vcxproj">
+      <Project>{2A6A89D7-A5FA-37C1-BD05-A9CACB381402}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

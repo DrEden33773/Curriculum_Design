@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\user_AccountInfoReceiver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\user_interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\province_information_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_admin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\time_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\software_information.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\user_AccountInfoReceiver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\user_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\province_information_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_admin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account_info_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\time_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\VS_cpp_projects\Curriculum_Design\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8D841D17-FB84-37EE-8FFA-51C3425F449A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E35E32DD-035B-3AD6-ADEA-FD1A3B05EACA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

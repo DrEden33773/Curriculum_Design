@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="account_manager" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>TCEAkBBAyAgAAQCAAAAEEAEQAABAgAEIAAAAAGEAFgA=</HashCode>
+      <FileName>account.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="account_info_manager" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJQBAgAAEAABAABIAAEAAMQAAAIFEIAAQoABEAABAA=</HashCode>
+      <FileName>account_info_manager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="daily_health_check" Collapsed="true">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IFAAAAAQAAAAACFAAIogKqIACAAAAAAIABAgABAAAAA=</HashCode>
+      <FileName>daily_health_check.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="daily_health_check_admin" Collapsed="true">
+    <Position X="5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BKAAAEAACAAAA6CAAAAAAAAAAIABBAIAgEEgAAQAgAA=</HashCode>
+      <FileName>daily_health_check_admin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="daily_health_check_user" Collapsed="true">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAABAAEAAQAAAAAABAAQAAAAAAAgCIAAAIA=</HashCode>
+      <FileName>daily_health_check_user.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="province_information_manager" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAQAAAAQAAIAAQgAAAAAEAAAAAAAJAAAQAAAAAAAKI=</HashCode>
+      <FileName>province_information_manager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="info" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAIAAAAAQIBAAAACAAAAAAAAAQEAQAAQAEAAAAA=</HashCode>
+      <FileName>software_information.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="time_manager" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAEEAQYEEAAQAAAAAAAAAEIAAACAAAAAI=</HashCode>
+      <FileName>time_manager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="user_info_receiver" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAAAAAAEAABABAAAAgAAEQQAAABAAAAAICAAAgAgA=</HashCode>
+      <FileName>user_AccountInfoReceiver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="admin_info_receiver" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAASAAgAAAAABCAAEAAAAAEQAAgAAAQQAEAAAABACAA=</HashCode>
+      <FileName>admin_AccountInfoReceiver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

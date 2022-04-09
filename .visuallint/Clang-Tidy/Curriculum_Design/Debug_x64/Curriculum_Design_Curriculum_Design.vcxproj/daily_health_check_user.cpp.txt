@@ -1,0 +1,74 @@
+clang version 13.0.1
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: 
+clang version 13.0.1
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:\LLVM\bin
+clang Invocation:
+ "C:\\LLVM\\bin\\clang-tool" "-cc1" "-triple" "x86_64-pc-windows-msvc19.29.30130" "-fsyntax-only" "-disable-free" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "daily_health_check_user.cpp" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-fno-rounding-math" "-mconstructor-aliases" "-munwind-tables" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-v" "-fcoverage-compilation-dir=E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design" "-resource-dir" "C:\\LLVM\\lib\\clang\\13.0.1" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\include" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\VS\\include" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\um" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\shared" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\cppwinrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um" "-D" "_UNICODE" "-D" "UNICODE" "-D" "_MT" "-D" "_DLL" "-D" "_DEBUG" "-D" "_NATIVE_WCHAR_T_DEFINED" "-D" "_CPPUNWIND" "-D" "_WIN64" "-D" "_AMD64_" "-D" "_CONSOLE" "-internal-isystem" "C:\\LLVM\\lib\\clang\\13.0.1\\include" "-internal-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\include" "-internal-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt" "-Wmicrosoft" "-Wno-invalid-token-paste" "-fdeprecated-macro" "-fdebug-compilation-dir=E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design" "-ferror-limit" "19" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.29.30130" "-std=c++14" "-fdelayed-template-parsing" "-fcxx-exceptions" "-fexceptions" "-faddrsig" "-x" "c++" "E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design\\daily_health_check_user.cpp"
+
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\atlmfc\include"
+ignoring nonexistent directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\winrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\include
+ C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\VS\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\cppwinrt
+ C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um
+ C:\LLVM\lib\clang\13.0.1\include
+End of search list.
+53 warnings generated.
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:24:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<C4><FA><D2><D1><CD><EA><B3>ɽ<A1><BF><B5><B4><U+BFA23><A1><CA>Ƿ<F1><D0><E8>Ҫ<B2><U+9FF4><B5><B1>ǰ<B5>Ľ<A1><BF><B5><B4><F2><BF><A8>״̬<A3><BF>(<CA><E4><C8><EB>Y<D4><F2><B2><U+9FF4><A3><AC><C6><E4><CB><FB><D7>ַ<FB><D4><U+B2EF2><U+9FF4>) >>> ";
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~         ~~~~~~~~ ~~~~~~~~~~~~ ~~~~        ~~~~~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:60:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<C7><EB><CE><CA><C4><E3><CA>Ƿ<F1><D2>Ѿ<AD><B7><B5>У <A3><BF>(Y/N) >>> ";
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~  ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:72:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<CA><E4><C8><EB><B5><C4><D7>ַ<FB><CE><DE>Ч<A3><AC><C7><EB><CA><E4><C8><EB>Y/y/N/n<A3><AC><BD><AB><D4>ٴ<CE><CF><D4>ʾ֮ǰ<B5><C4>ѡ<CF>�? << endl;
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~  ~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:81:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<C7><EB><CE><CA><C4><E3><CA>Ƿ<F1>סУ <A3><BF>(Y/N) >>> ";
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~   ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:91:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<CA><E4><C8><EB><B5><C4><D7>ַ<FB><CE><DE>Ч<A3><AC><C7><EB><CA><E4><C8><EB>Y/y/N/n<A3><AC><BD><AB><D4>ٴ<CE><CF><D4>ʾ֮ǰ<B5><C4>ѡ<CF>�? << endl;
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~  ~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:98:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<C7><EB><CE><CA><C4><E3><B5><C4><CC><E5><CE><C2><CA>Ƿ<U+73B39><FD> 37<A1><E6> <A3><BF>(Y/N) >>> ";
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~          ~~~~   ~~~~~~~~ ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:108:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<CA><E4><C8><EB><B5><C4><D7>ַ<FB><CE><DE>Ч<A3><AC><C7><EB><CA><E4><C8><EB>Y/y/N/n<A3><AC><BD><AB><D4>ٴ<CE><CF><D4>ʾ֮ǰ<B5><C4>ѡ<CF>�? << endl;
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~  ~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:115:24: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "14<CC><EC><C4>ڣ<AC><CA>Ƿ<F1><D4><F8><BE><AD><D4><DA> <<D6>з<E7><CF><D5>/<B8>߷<E7><CF>յ<D8><C7><F8>> ͣ<C1><F4><B3><AC><B9><FD>һ<CC><EC> " << endl
+                       ^~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~ ~~~~~~~~~~~~ ~~~~ ~~~~~~~~ ~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:116:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                 << "(0=><CE>ޣ<AC>1=><D4><DA><D6>з<E7><CF><D5><C7><F8><D3><F2>ͣ<C1><F4><B3><AC><B9><FD>һ<CC>�?=><D4>ڸ߷<E7><CF><D5><C7><F8><D3><F2>ͣ<C1><F4><B3><AC><B9><FD>һ<CC>�?=><CF><D4>ʾ<D6>С<A2><B8>߷<E7><CF><D5><C7><F8><D3><F2><C1>б<ED>) >>> ";~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~     ~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~     ~~~~~~~~ ~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:132:26: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+                cout << "<CA><E4><C8><EB><B5><C4><D7>ַ<FB><CE><DE>Ч<A3><AC><C7><EB><CA><E4><C8><EB>0/1/2/3<A3><AC><BD><AB><D4>ٴ<CE><CF><D4>ʾ֮ǰ<B5><C4>ѡ<CF>�? << endl;
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~  ~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:139:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+             << "Ŀǰ<A3><AC>34<B8><F6>ʡ<BC><B6><C7><F8><D3><U+A3B3E><F9>Ϊ<B5>ͷ<E7><CF><D5><C7><F8><A3><AC>ϵͳ<BD><AB><CC><F8><B9><FD> <<CA>Ƿ<F1><D4><DA><D6>и߷<E7><CF><D5><C7><F8>ͣ<C1><F4>> <D5><E2>һѡ<CF>�? << endl;
+                   ^~~~~~~~  ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~         ~~~~ ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~ ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~  ~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:144:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<BD><FC><C6><DA><CA>Ƿ<F1><D3>г<F6><B9><FA><C2>þ<D3>ʷ <A3><BF>(Y/N) >>> ";
+                 ^~~~~~~~~~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:154:22: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+            cout << "<CA><E4><C8><EB><B5><C4><D7>ַ<FB><CE><DE>Ч<A3><AC><C7><EB><CA><E4><C8><EB>Y/y/N/n<A3><AC><BD><AB><D4>ٴ<CE><CF><D4>ʾ֮ǰ<B5><C4>ѡ<CF>�? << endl;
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~  ~~~~~~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:163:14: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+    cout << "<C4><FA><D2><D1><CD><EA><B3><C9> <ÿ<C8>ս<A1><BF><B5><B4><F2><BF><A8>> <A3><AC><B8><D0>л<C4><FA><B5><C4><C5><E4><BA>ϣ<A1>" << endl;
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\daily_health_check_user.cpp:171:18: warning: illegal character encoding in string literal [clang-diagnostic-invalid-source-encoding]
+        cout << "<D0><C5>Ϣд<C8><EB><BD><U+05F6>Σ<AC><B4><F2><BF><AA> xx_daily_check.dat ʧ<B0>ܣ<A1><BC><B4><BD><AB><CD>˳<F6><B3><CC><D0><F2>" << endl;
+                 ^~~~~~~~  ~~~~~~~~~~~~         ~~~~~~~~~~~~~~~~~~~~                     ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+Suppressed 38 warnings (38 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as w

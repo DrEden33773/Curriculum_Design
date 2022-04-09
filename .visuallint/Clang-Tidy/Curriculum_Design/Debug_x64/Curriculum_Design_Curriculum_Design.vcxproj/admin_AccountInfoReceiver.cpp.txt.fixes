@@ -1,0 +1,997 @@
+---
+MainSourceFile:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      1614
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1614
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1615
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1618
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1619
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1622
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1623
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      1690
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1690
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1691
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1693
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1694
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1699
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1700
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1703
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1706
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1709
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1710
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1714
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1715
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1716
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1717
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1720
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1721
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1722
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1723
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1724
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1725
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1728
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1729
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1730
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1731
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1734
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1735
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1736
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1737
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1740
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      1741
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      2094
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2094
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2095
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2096
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2097
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2098
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2099
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2103
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2108
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2111
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2115
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      2264
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2264
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2265
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2266
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2269
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2270
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2271
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2272
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2273
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2274
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2275
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2278
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2281
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2282
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2283
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2284
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2285
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2287
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2290
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2293
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2298
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2301
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2305
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      2615
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2615
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2617
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2618
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2619
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2620
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2621
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2622
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2626
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2630
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      2677
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2677
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2678
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2679
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2680
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2688
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2691
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2692
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2693
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2694
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2695
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2696
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2697
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2699
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2700
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2701
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2702
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2703
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2707
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2709
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      2746
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2746
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2747
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2748
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2749
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2750
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2751
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2752
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2753
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2754
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2755
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2756
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2757
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2762
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2763
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2764
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2765
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2768
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2769
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2770
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2771
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2773
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      2976
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2976
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2979
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2982
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2985
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2988
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2989
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2992
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2995
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2996
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2997
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2998
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      2999
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3000
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3001
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3003
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3004
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3005
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3006
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3007
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3011
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3013
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      3184
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3184
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3187
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3190
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3193
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3196
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3197
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3200
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3201
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3202
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3203
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3206
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3207
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3208
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3209
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3211
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      3600
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3600
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3601
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3605
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3606
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3608
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3611
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3612
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3618
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3619
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3620
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3621
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3622
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3623
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3624
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3625
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3629
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3632
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3633
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3636
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3637
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      3839
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3839
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3842
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3847
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3848
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      3852
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      4040
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4040
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4043
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4044
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4045
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4048
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4049
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4050
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4051
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4054
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4055
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4056
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4057
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4058
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4059
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4063
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4064
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4065
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4066
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4067
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4068
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4071
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4072
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4073
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4074
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4075
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4076
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4077
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4078
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4079
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4080
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4081
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4082
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4083
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4084
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4088
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4089
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4092
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4094
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4097
+          Length:          3
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4100
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4103
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4104
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4105
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4106
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4107
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4108
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4109
+          Length:          3
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4112
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4113
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4114
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4115
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4116
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4117
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4119
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4122
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4127
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4128
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4130
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      4405
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4405
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4406
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4407
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4410
+          Length:          3
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4417
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4418
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4419
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4422
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4423
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4424
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4425
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4426
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4427
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4428
+          Length:          3
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4431
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4432
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4433
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4434
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4435
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4436
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4438
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4441
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4446
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4447
+          Length:          2
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4449
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+  - DiagnosticName:  clang-diagnostic-invalid-source-encoding
+    DiagnosticMessage:
+      Message:         illegal character encoding in string literal
+      FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+      FileOffset:      4706
+      Replacements:    []
+      Ranges:
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4706
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4711
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4712
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4713
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4714
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4715
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4718
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4719
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4722
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4723
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4727
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4728
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4729
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4732
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4735
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4738
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4739
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4740
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4741
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4742
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4745
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4746
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4747
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4748
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4751
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4752
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4753
+          Length:          1
+        - FilePath:        'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\admin_AccountInfoReceiver.cpp'
+          FileOffset:      4754
+          Length:          1
+    Level:           Warning
+    BuildDirectory:  'E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design'
+...

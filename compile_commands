@@ -1,0 +1,67 @@
+[
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/account.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/account.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/account.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/admin_AccountInfoReceiver.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/admin_AccountInfoReceiver.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/admin_AccountInfoReceiver.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/admin_interface.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/admin_interface.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/admin_interface.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/main.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/main.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/main.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/software_information.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/software_information.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/software_information.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/user_AccountInfoReceiver.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/user_AccountInfoReceiver.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/user_AccountInfoReceiver.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/user_interface.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/user_interface.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/user_interface.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/province_information_manager.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/province_information_manager.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/province_information_manager.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/daily_health_check_admin.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/daily_health_check_admin.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/daily_health_check_admin.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/daily_health_check_user.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/daily_health_check_user.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/daily_health_check_user.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/account_info_manager.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/account_info_manager.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/account_info_manager.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/daily_health_check.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/daily_health_check.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/daily_health_check.cpp"
+},
+{
+  "directory": "E:/VS_cpp_projects/Curriculum_Design/build",
+  "command": "C:/LLVM/bin/clang++.exe  @CMakeFiles/Curriculum_Design.dir/includes_CXX.rsp -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++20 -o CMakeFiles/Curriculum_Design.dir/Curriculum_Design/time_manager.cpp.obj -c E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/time_manager.cpp",
+  "file": "E:/VS_cpp_projects/Curriculum_Design/Curriculum_Design/time_manager.cpp"
+}
+]

@@ -1,0 +1,44 @@
+clang version 13.0.1
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: 
+clang version 13.0.1
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:\LLVM\bin
+clang Invocation:
+ "C:\\LLVM\\bin\\clang-tool" "-cc1" "-triple" "x86_64-pc-windows-msvc19.29.30130" "-fsyntax-only" "-disable-free" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "main.cpp" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-fno-rounding-math" "-mconstructor-aliases" "-munwind-tables" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-v" "-fcoverage-compilation-dir=E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design" "-resource-dir" "C:\\LLVM\\lib\\clang\\13.0.1" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\include" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include" "-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\VS\\include" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\um" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\shared" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\cppwinrt" "-isystem" "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um" "-D" "_UNICODE" "-D" "UNICODE" "-D" "_MT" "-D" "_DLL" "-D" "_DEBUG" "-D" "_NATIVE_WCHAR_T_DEFINED" "-D" "_CPPUNWIND" "-D" "_WIN64" "-D" "_AMD64_" "-D" "_CONSOLE" "-internal-isystem" "C:\\LLVM\\lib\\clang\\13.0.1\\include" "-internal-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\include" "-internal-isystem" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.31.31103\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt" "-Wmicrosoft" "-Wno-invalid-token-paste" "-fdeprecated-macro" "-fdebug-compilation-dir=E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design" "-ferror-limit" "19" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.29.30130" "-std=c++14" "-fdelayed-template-parsing" "-fcxx-exceptions" "-fexceptions" "-faddrsig" "-x" "c++" "E:\\VS_cpp_projects\\Curriculum_Design\\Curriculum_Design\\main.cpp"
+
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\atlmfc\include"
+ignoring nonexistent directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\winrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.31.31103\include
+ C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\VS\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\cppwinrt
+ C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um
+ C:\LLVM\lib\clang\13.0.1\include
+End of search list.
+1 error generated.
+Error while processing E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\main.cpp.
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\main.cpp:27:28: error: no matching constructor for initialization of 'user_info_receiver' [clang-diagnostic-error]
+        user_info_receiver user_transmitter(returned_account, returned_password);
+                           ^                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design/user_AccountInfoReceiver.h:13:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+class user_info_receiver : public account_manager {
+      ^
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design/user_AccountInfoReceiver.h:13:7: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided
+E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design/user_AccountInfoReceiver.h:35:5: note: candidate constructor not viable: requires 0 arguments, but 2 were provided
+    user_info_receiver();
+    ^
+Found compiler error(s).
