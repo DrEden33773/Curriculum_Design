@@ -6,7 +6,7 @@
 #include <windows.h> // Sleep() 使用
 using namespace std;
 
-auto admin_info_receiver::if_profession_type_valid(int input) -> bool
+bool admin_info_receiver::if_profession_type_valid(int input)
 {
     if (input >= 1 && input <= 20) {
         return true;
@@ -15,7 +15,7 @@ auto admin_info_receiver::if_profession_type_valid(int input) -> bool
     }
 }
 
-inline void admin_info_receiver::make_sure_admin_list_file_exists()
+inline void admin_info_receiver::make_sure_admin_list_file_exists() const
 {
     fstream file;
     /// now, tries to new the file
@@ -28,7 +28,7 @@ inline void admin_info_receiver::make_sure_admin_list_file_exists()
     file.close(); // 及时关闭
 }
 
-auto admin_info_receiver::if_admin_list_file_empty() -> bool
+bool admin_info_receiver::if_admin_list_file_empty()
 {
     make_sure_admin_list_file_exists(); // 确保文件正常的产生
     fstream file;
@@ -41,7 +41,7 @@ auto admin_info_receiver::if_admin_list_file_empty() -> bool
     }
     checker = new current_admin_info;
     bool if_empty = true;
-    while (file.read((char*)(checker), sizeof(current_admin_info))) {
+    while (file.read((char*)checker, sizeof(current_admin_info))) {
         if_empty = false;
         break;
     }
@@ -52,16 +52,16 @@ auto admin_info_receiver::if_admin_list_file_empty() -> bool
 
 admin_info_receiver::admin_info_receiver()
 {
-    string trans_account = return_account_name();
-    admin_import_from_login_interface(trans_account);
-    try_to_load_admin_file(trans_account);
+    // empty
+    // string trans_account = return_account_name();
+    // admin_import_from_login_interface(trans_account);
+    // try_to_load_admin_file(trans_account);
 }
 
-admin_info_receiver::admin_info_receiver(
-    const string& input_account,
-    const string& input_password)
+admin_info_receiver::admin_info_receiver(const string& input_account)
 {
-    // Empty
+    admin_import_from_login_interface(input_account);
+    try_to_load_admin_file(input_account);
 }
 
 void admin_info_receiver::admin_import_from_login_interface(const string& input_account)
@@ -75,8 +75,9 @@ void admin_info_receiver::try_to_load_admin_file(const string& correct_account)
 {
     ca_cache = new current_admin_info; // 缓存，用于比对信息
     fstream file;
-    bool if_file_is_empty = if_admin_list_file_empty();
-    if (if_file_is_empty) { // 文件是空的
+    const bool if_file_is_empty = if_admin_list_file_empty();
+    if (if_file_is_empty) {
+        // 文件是空的
         // 保持默认参数
     } else {
         file.open(admin_list_file_location, ios::in | ios::binary);
@@ -87,16 +88,16 @@ void admin_info_receiver::try_to_load_admin_file(const string& correct_account)
             Sleep(250);
             exit(-1);
         }
-        while (file.read((char*)(ca_cache), sizeof(current_admin_info))) {
+        while (file.read((char*)ca_cache, sizeof(current_admin_info))) {
             if (ca_cache->c_account == ca_info->c_account) {
                 // move value
-                ca_info = std::move(ca_cache); // 贼好用这个
+                ca_info = ca_cache; // 贼好用这个
                 break;
             }
         }
         file.close(); // 及时关闭
-        delete ca_cache; // 解除缓存
     }
+    delete ca_cache; // 解除缓存
 }
 
 void admin_info_receiver::write_to_admin_file()
@@ -108,9 +109,10 @@ void admin_info_receiver::write_to_admin_file()
         Sleep(250);
         exit(-1);
     }
-    if (!if_admin_list_file_is_empty) { // 文件里不是空的 => 需要找到正确的位置
+    if (!if_admin_list_file_is_empty) {
+        // 文件里不是空的 => 需要找到正确的位置
         int POS;
-        while (file.read((char*)(ca_cache), sizeof(current_admin_info))) {
+        while (file.read(reinterpret_cast<char*>(ca_cache), sizeof(current_admin_info))) {
             if (ca_cache->c_account == ca_info->c_account) {
                 POS = file.tellg();
                 break;
@@ -124,9 +126,10 @@ void admin_info_receiver::write_to_admin_file()
             exit(-1);
         }
         file.seekp(POS, ios::beg);
-        file.write((char*)(ca_cache), sizeof(current_admin_info));
+        file.write(reinterpret_cast<char*>(ca_cache), sizeof(current_admin_info));
         file.close();
-    } else { // 文件是空的 => 直接不用找位置了，写到头上就完全OK
+    } else {
+        // 文件是空的 => 直接不用找位置了，写到头上就完全OK
         file.close();
         file.open(admin_list_file_location, ios::out | ios::binary);
         if (!file.is_open()) {
@@ -134,7 +137,7 @@ void admin_info_receiver::write_to_admin_file()
             Sleep(250);
             exit(-1);
         }
-        file.write((char*)(ca_cache), sizeof(current_admin_info));
+        file.write(reinterpret_cast<char*>(ca_cache), sizeof(current_admin_info));
         file.close();
     }
 }
@@ -192,8 +195,7 @@ void admin_info_receiver::ask_to_set_profession_type()
         //         cout << "请 ==最后一次== 确认你输入的必要信息：" << endl
         //              << endl;
         //         cout << "==============================================" << endl;
-        //         // cout.setf(ios::left); // 左对齐 => 修正，这里不需要
-        //         cout << "   分管学院代号：  " << setw(5) << temp_profession_code << endl;
+        //         cout << "   分管学院代号：  " << setw(12) << temp_profession_code << endl;
         //         cout << "==============================================" << endl
         //              << endl;
         //         cout << "是否正确？正确请输入Y/y，不正确请输入其他任意非空字符(稍后将自动重新引导您输入 分管学院代号) >>> ";
@@ -212,10 +214,8 @@ void admin_info_receiver::ask_to_set_profession_type()
 
         //更新管理员状态 -> 是否第一次使用
         ca_info->if_first_use = false;
-
         //写入文件
         write_to_admin_file();
-
         // end of function
         // cout << "已成功输入 [必要信息]，稍等片刻将进入 <管理员界面>" << endl;
         Sleep(1000);
@@ -224,7 +224,7 @@ void admin_info_receiver::ask_to_set_profession_type()
 }
 
 //接口函数
-auto admin_info_receiver::return_c_account() -> string
+string admin_info_receiver::return_c_account() const
 {
     return ca_info->c_account;
 }

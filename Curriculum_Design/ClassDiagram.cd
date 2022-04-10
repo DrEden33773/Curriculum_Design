@@ -1,70 +1,260 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="account_manager" Collapsed="true">
-    <Position X="3.75" Y="1.75" Width="1.5" />
+  <Class Name="account_manager">
+    <Position X="3.5" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="account_manager::account_info" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>account.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>TCEAkBBAyAgAAQCAAAAEEAEQAABAgAEIAAAAAGEAFgA=</HashCode>
+      <HashCode>SCEAkABAAAAgAQAAICAFACEQAABAkAEAAQIAAGBAFgA=</HashCode>
       <FileName>account.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="account_info_manager" Collapsed="true">
-    <Position X="0.5" Y="4.75" Width="1.5" />
+  <Class Name="account_info_manager">
+    <Position X="0.5" Y="4.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="user_info_receiver">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="-0.509" Y="0.089" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <InheritanceLine Type="account_manager">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="-3.557" Y="1.838" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAJQBAgAAEAABAABIAAEAAMQAAAIFEIAAQoABEAABAA=</HashCode>
+      <HashCode>AAJQBAgACAAABAABIAAkAAIQAAAIHEIAAQoCBEAABAA=</HashCode>
       <FileName>account_info_manager.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="daily_health_check" Collapsed="true">
-    <Position X="3.75" Y="4.75" Width="1.5" />
+  <Class Name="admin_interface">
+    <Position X="6.75" Y="8.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>IFAAAAAQAAAAACFAAIogKqIACAAAAAAIABAgABAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAABACBAAAAAAAAAAgAAAAAIBABAAAAACA=</HashCode>
+      <FileName>admin_interface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="daily_health_check">
+    <Position X="2.75" Y="4" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="daily_health_check::dict_checker" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>daily_health_check.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="daily_health_check::health_check_info_trans" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>daily_health_check.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="daily_health_check::health_check_info" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>daily_health_check.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <InheritanceLine Type="user_info_receiver">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.074" Y="0.006" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IFAAAAAQAAAAACVAAMogKqIACAAAAAAIABAgBBAQABA=</HashCode>
       <FileName>daily_health_check.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="daily_health_check_admin" Collapsed="true">
-    <Position X="5" Y="6" Width="1.5" />
+  <Class Name="daily_health_check_admin">
+    <Position X="1.25" Y="8.25" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>BKAAAEAACAAAA6CAAAAAAAAAAIABBAIAgEEgAAQAgAA=</HashCode>
+      <HashCode>BKAAAEAACAAAA6CEAAAAAAAAAIABRAIAgEEAAAQAgAg=</HashCode>
       <FileName>daily_health_check_admin.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="daily_health_check_user" Collapsed="true">
-    <Position X="2.75" Y="6" Width="1.5" />
+  <Class Name="daily_health_check_user">
+    <Position X="4.25" Y="8.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAABAAEAAQAAAAAABAAQAAAAAAAgCIAAAIA=</HashCode>
+      <HashCode>AAAAACAAAMBBAAAAAQAAAAAABAAQAAAAAAEgCIAAAIA=</HashCode>
       <FileName>daily_health_check_user.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="province_information_manager" Collapsed="true">
-    <Position X="9.75" Y="0.5" Width="1.5" />
+  <Class Name="NAT_manager">
+    <Position X="6.75" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="NAT_manager::NAT_template_translator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>NAT.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="NAT_manager::NAT_template" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>NAT.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="NAT_manager::personal_NAT_list" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>NAT.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>QAAQAAAAQAAIAAQgAAAAAEAAAAAAAJAAAQAAAAAAAKI=</HashCode>
+      <HashCode>ABUAABgAgCADAAAAAgAJJgEEAAAAgCCIQAAQgQCAAgE=</HashCode>
+      <FileName>NAT.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NAT_admin">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAAAkAyCECRAHBAJgiAAkIEAQGALEDAGAoQEAAAAo=</HashCode>
+      <FileName>NAT_admin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NAT_user">
+    <Position X="5.5" Y="4.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="NAT_user::cache_of_unfinished_nat_check" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>NAT_user.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAACBAFQBAQAAADCQAJCAEQAAFQBABBAAAAABCAAIAE=</HashCode>
+      <FileName>NAT_user.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="necessary_affairs_manager">
+    <Position X="10.25" Y="6.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAAAAAQAAAAAQQAAAAAAAEQwAAAAAAAAAAAAQAAAAgQ=</HashCode>
+      <FileName>necessary_affairs_manager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="province_information_manager">
+    <Position X="10.25" Y="2.75" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAQAAAAQAAIAoQgAAAAAEAAAAAAAJAAAQAAAAAAAKI=</HashCode>
       <FileName>province_information_manager.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="info" Collapsed="true">
-    <Position X="3.75" Y="0.5" Width="1.5" />
+  <Class Name="time_manager">
+    <Position X="10.25" Y="4" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="time_manager::defined_time" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>time_manager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AQQAAAIAAAAAQIBAAAACAAAAAAAAAQEAQAAQAEAAAAA=</HashCode>
-      <FileName>software_information.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="time_manager" Collapsed="true">
-    <Position X="11.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAEEAQYEEAAQAAAAAAAAAEIAAACAAAAAI=</HashCode>
+      <HashCode>AAABIAAAAAAAEEAQYEEAAQAAAAAAAAAEIAAgCAAAAAI=</HashCode>
       <FileName>time_manager.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="user_info_receiver" Collapsed="true">
-    <Position X="2.75" Y="3.25" Width="1.5" />
+  <Class Name="user_info_receiver">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="user_info_receiver::current_user_info_tr" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>user_AccountInfoReceiver.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="user_info_receiver::current_user_info" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>user_AccountInfoReceiver.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>ACEAAAAAAEAABABAAAAgAAEQQAAABAAAAAICAAAgAgA=</HashCode>
+      <HashCode>ICEEAAAAAEAAJAAAAAIgAAEQQgBABAEAAAICABAgAgA=</HashCode>
       <FileName>user_AccountInfoReceiver.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="admin_info_receiver" Collapsed="true">
-    <Position X="7.25" Y="3.25" Width="1.5" />
+  <Class Name="user_interface">
+    <Position X="8.5" Y="8.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACEAAEAAAAAAVACAAAAAAAAQAAAABAAAAAADAAAAACQ=</HashCode>
+      <FileName>user_interface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="admin_info_receiver">
+    <Position X="10.25" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="admin_info_receiver::current_admin_info" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>admin_AccountInfoReceiver.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>GAASAAgAAAAABCAAEAAAAAEQAAgAAAQQAEAAAABACAA=</HashCode>
       <FileName>admin_AccountInfoReceiver.h</FileName>

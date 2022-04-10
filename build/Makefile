@@ -129,6 +129,30 @@ Curriculum_Design/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Curriculum_Design.dir/build.make CMakeFiles/Curriculum_Design.dir/build
 .PHONY : Curriculum_Design/fast
 
+Curriculum_Design/NAT.obj: Curriculum_Design/NAT.cpp.obj
+.PHONY : Curriculum_Design/NAT.obj
+
+# target to build an object file
+Curriculum_Design/NAT.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Curriculum_Design.dir/build.make CMakeFiles/Curriculum_Design.dir/Curriculum_Design/NAT.cpp.obj
+.PHONY : Curriculum_Design/NAT.cpp.obj
+
+Curriculum_Design/NAT.i: Curriculum_Design/NAT.cpp.i
+.PHONY : Curriculum_Design/NAT.i
+
+# target to preprocess a source file
+Curriculum_Design/NAT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Curriculum_Design.dir/build.make CMakeFiles/Curriculum_Design.dir/Curriculum_Design/NAT.cpp.i
+.PHONY : Curriculum_Design/NAT.cpp.i
+
+Curriculum_Design/NAT.s: Curriculum_Design/NAT.cpp.s
+.PHONY : Curriculum_Design/NAT.s
+
+# target to generate assembly for a file
+Curriculum_Design/NAT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Curriculum_Design.dir/build.make CMakeFiles/Curriculum_Design.dir/Curriculum_Design/NAT.cpp.s
+.PHONY : Curriculum_Design/NAT.cpp.s
+
 Curriculum_Design/account.obj: Curriculum_Design/account.cpp.obj
 .PHONY : Curriculum_Design/account.obj
 
@@ -450,6 +474,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Curriculum_Design"
+	@echo "... Curriculum_Design/NAT.obj"
+	@echo "... Curriculum_Design/NAT.i"
+	@echo "... Curriculum_Design/NAT.s"
 	@echo "... Curriculum_Design/account.obj"
 	@echo "... Curriculum_Design/account.i"
 	@echo "... Curriculum_Design/account.s"

@@ -40,6 +40,9 @@
     <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\time_manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\NAT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\account.h">
@@ -76,6 +79,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\time_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design\NAT.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

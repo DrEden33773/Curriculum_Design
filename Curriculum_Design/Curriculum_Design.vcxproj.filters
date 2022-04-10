@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="software_information.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="account.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -51,12 +48,21 @@
     <ClInclude Include="time_manager.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="NAT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NAT_user.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NAT_admin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="necessary_affairs_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="software_information.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="account.cpp">
@@ -90,6 +96,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="time_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NAT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NAT_user.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NAT_admin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="necessary_affairs_manager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,0 +1,16 @@
+# ninja log v5
+0	122	6718019949164546	Curriculum_Design.exe	efd1e8d56c0b5d5e
+1	570	6718019834762048	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/main.cpp.obj	28a5422e020d8a88
+12	679	6718019835847033	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/daily_health_check_user.cpp.obj	fcc03a63fdde9273
+25	799	6718019191928868	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/NAT.cpp.obj	4db59e7b2c305878
+11	819	6718019192098878	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/admin_interface.cpp.obj	ff077cb3f8d2b49b
+24	421	6718019188148873	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/time_manager.cpp.obj	a301ee110edce7c3
+9	854	6718019192458880	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/admin_AccountInfoReceiver.cpp.obj	9aab8dec2136c97d
+15	779	6718019191708870	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/software_information.cpp.obj	af6e6077c5953a7b
+10	631	6718019835337054	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/user_interface.cpp.obj	955f1100f86c829b
+17	596	6718019835017042	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/daily_health_check.cpp.obj	9328daa2f3c7b8e0
+16	857	6718019192513883	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/province_information_manager.cpp.obj	a22ca49d200e5171
+1	564	6718019921909542	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/user_AccountInfoReceiver.cpp.obj	eac929b7dfe4f24
+15	641	6718019835472056	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/daily_health_check_admin.cpp.obj	11e8f3e19778d84
+16	674	6718019835802033	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/account_info_manager.cpp.obj	2257fdd0c9bcb991
+0	850	6718019192453873	CMakeFiles/Curriculum_Design.dir/Curriculum_Design/account.cpp.obj	ff0be9010e20596c
