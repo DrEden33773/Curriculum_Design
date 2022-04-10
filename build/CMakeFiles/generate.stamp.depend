@@ -1,0 +1,23 @@
+# CMake generation dependency list for this directory.
+C:/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake
+C:/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake
+C:/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake
+C:/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake
+C:/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake
+C:/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake
+C:/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake
+C:/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake
+C:/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake
+C:/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/CMake/share/cmake-3.23/Modules/Compiler/MSVC-C.cmake
+C:/CMake/share/cmake-3.23/Modules/Compiler/MSVC-CXX.cmake
+C:/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC-C.cmake
+C:/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC.cmake
+C:/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake
+C:/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake
+E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt
+E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/3.23.0-rc3/CMakeCCompiler.cmake
+E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/3.23.0-rc3/CMakeCXXCompiler.cmake
+E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/3.23.0-rc3/CMakeRCCompiler.cmake
+E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/3.23.0-rc3/CMakeSystem.cmake

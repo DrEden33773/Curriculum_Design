@@ -1,290 +1,379 @@
 #include "daily_health_check_user.h"
+
+#include <conio.h>
 #include <Windows.h>
 #include <cstdlib>
 #include <fstream>
+#include <iomanip>
 #include <iostream>
 #include <string>
+
+#include "province_information_manager.h"
 
 using namespace std;
 
 daily_health_check_user::daily_health_check_user()
 {
-    // ç°åœ¨ç¼–å†™ => æ–°ç‰ˆ => æ–‡ä»¶ç»“æ„å‘ç”Ÿ~å·¨å¤§çš„æ”¹å˜
-    /*write into current_info*/
-    current_health_check_info = new health_check_info; // newï¼Œè®°å¾—delete
-    current_health_check_info->student_name = return_real_name();
-    current_health_check_info->account_id = return_c_account();
-    current_health_check_info->student_id = return_student_number();
-    current_health_check_info->if_check_is_necessary = true; // é»˜è®¤ å¿…é¡»ä¸ŠæŠ¥
-    current_health_check_info->if_checked = false; // é»˜è®¤ æ²¡æœ‰æ‰“å¡
-    /*load from file*/
+    // empty
+}
+
+daily_health_check_user::daily_health_check_user(
+    const string& real_name,
+    const string& c_account,
+    const string& student_number) // ´ÓÓÃ»§½çÃæ´«½øÀ´²ÎÊı
+    : daily_health_check("flag")
+{
+    system("cls");
+    // ÏÖÔÚ±àĞ´ => ĞÂ°æ => ÎÄ¼ş½á¹¹·¢Éú~¾Ş´óµÄ¸Ä±ä
+    /* write into current_info */
+    current_health_check_info = new health_check_info; // new£¬¼ÇµÃdelete
+    current_health_check_info->student_name = real_name;
+    current_health_check_info->account_id = c_account;
+    current_health_check_info->student_id = student_number;
+    current_health_check_info->if_check_is_necessary = true; // Ä¬ÈÏ ±ØĞëÉÏ±¨
+    current_health_check_info->if_checked = false; // Ä¬ÈÏ Ã»ÓĞ´ò¿¨
+    plug_of_if_should_alert = false;
+    /* update_health_check_list */
+    update_health_check_file();
+    /* load from file */
     try_to_load_from_file_new(current_health_check_info->student_id);
-    // old
-    //     current_health_check_info = new health_check_info;
-    //     const string temp_account_id = return_c_account();
-    //     const string temp_student_name = return_real_name();
-    //     const string temp_student_id = return_student_number();
-    //     const string possible_file_name = file_root + temp_student_id + "_daily_check.dat";
-    //     current_health_check_info->student_name = temp_student_name;
-    //     current_health_check_info->student_id = temp_student_id;
-    //     current_health_check_info->account_id = temp_account_id;
-    //     try_to_load_from_file(possible_file_name);
     if (current_health_check_info->if_checked) {
-        cout << "æ‚¨å·²å®Œæˆå¥åº·æ‰“å¡ï¼æ˜¯å¦éœ€è¦æŸ¥çœ‹å½“å‰çš„å¥åº·æ‰“å¡çŠ¶æ€ï¼Ÿ(è¾“å…¥Y/yåˆ™æŸ¥çœ‹ï¼Œå…¶ä»–å­—ç¬¦åˆ™ä¸æŸ¥çœ‹ï¼Œå¹¶è‡ªåŠ¨å›åˆ°ä¸Šä¸€çº§èœå•) >>> ";
+        cout << "ÄúÒÑÍê³É½¡¿µ´ò¿¨£¡ÊÇ·ñĞèÒª²é¿´µ±Ç°µÄ½¡¿µ´ò¿¨×´Ì¬£¿(ÊäÈëY/yÔò²é¿´£¬ÆäËû×Ö·ûÔò²»²é¿´£¬²¢×Ô¶¯»Øµ½ÉÏÒ»¼¶²Ëµ¥) >>> ";
         char temp;
         cin >> temp;
         if (temp == 'y' || temp == 'Y') {
             show_check_status();
         } else {
-            cout << "æ”¶åˆ°ï¼å³å°†è¿”å› [ç”¨æˆ·ç•Œé¢] ... " << endl;
+            cout << "ÊÕµ½£¡¼´½«·µ»Ø [ÓÃ»§½çÃæ] ... " << endl;
             Sleep(250);
         }
-    } else if (current_health_check_info->if_check_is_necessary == true) {
-        pre_push_lable(); // æ²¡æœ‰æ¯æ—¥æ‰“å¡ï¼Œæç¤ºï¼Œç„¶åå¼ºåˆ¶æ‰“å¡
+    } else if (current_health_check_info->if_check_is_necessary) {
+        pre_push_label(); // Ã»ÓĞÃ¿ÈÕ´ò¿¨£¬ÌáÊ¾£¬È»ºóÇ¿ÖÆ´ò¿¨
         do_the_check();
     } else {
-        cout << "æ‚¨å¹¶æœªè¢«å¼ºåˆ¶è¦æ±‚è¿›è¡Œ <å¥åº·æ‰“å¡>ï¼Œè¯·é—®æ‚¨æ˜¯å¦è¦è‡ªæ„¿æ‰“å¡ï¼Ÿ(è¾“å…¥Y/yåˆ™æ‰“å¡ï¼Œå…¶ä»–å­—ç¬¦åˆ™ä¸æ‰“å¡ï¼Œå¹¶è‡ªåŠ¨å›åˆ°ä¸Šä¸€çº§èœå•) >>> ";
-        char flag;
+        cout << "Äú²¢Î´±»Ç¿ÖÆÒªÇó½øĞĞ <½¡¿µ´ò¿¨>£¬ÇëÎÊÄúÊÇ·ñÒª×ÔÔ¸´ò¿¨£¿(ÊäÈëY/yÔò´ò¿¨£¬ÆäËû×Ö·ûÔò²»´ò¿¨£¬²¢×Ô¶¯»Øµ½ÉÏÒ»¼¶²Ëµ¥) >>> ";
+        string flag;
         cin >> flag;
-        if (flag == 'y' || flag == 'Y') {
+        if (flag == "y" || flag == "Y") {
             do_the_check();
         } else {
-            cout << "æ”¶åˆ°ï¼å³å°†è¿”å› [ç”¨æˆ·ç•Œé¢] ... " << endl;
+            cout << "ÊÕµ½£¡¼´½«·µ»Ø [ÓÃ»§½çÃæ] ... " << endl;
             Sleep(250);
         }
     }
 }
 
-// ä¸‹é¢è¿™ä¸ªå‡½æ•°å·²è¢«å¼ƒç”¨
+daily_health_check_user::daily_health_check_user(
+    const string& real_name,
+    const string& c_account,
+    const string& student_number,
+    const string& any) // ½Ó¿ÚÓÃ
+{
+    current_health_check_info = new health_check_info; // new£¬¼ÇµÃdelete
+    current_health_check_info->student_name = real_name;
+    current_health_check_info->account_id = c_account;
+    current_health_check_info->student_id = student_number;
+    current_health_check_info->if_check_is_necessary = true; // Ä¬ÈÏ ±ØĞëÉÏ±¨
+    current_health_check_info->if_checked = false; // Ä¬ÈÏ Ã»ÓĞ´ò¿¨
+    plug_of_if_should_alert = false;
+    update_health_check_file();
+    try_to_load_from_file_new(current_health_check_info->student_id);
+    if (!current_health_check_info->if_checked && current_health_check_info->if_check_is_necessary) {
+        plug_of_if_should_alert = true;
+    }
+}
+
+daily_health_check_user::~daily_health_check_user()
+{
+    /*
+     * Nothing to do!
+     * 'Cause this destructor will call the one of base class,
+     * which will free all ptr_var-allocated space in the heap
+     */
+}
+
+// ÏÂÃæÕâ¸öº¯ÊıÒÑ±»ÆúÓÃ
 void daily_health_check_user::try_to_load_from_file(const string& possible_file_name)
 {
     fstream file;
     file.open(possible_file_name, ios::in | ios::binary);
     if (!file.is_open()) {
-        // æ²¡æœ‰å‡ºé”™çš„æƒ…å†µä¸‹ï¼Œå°±æ˜¯æ²¡æœ‰è¿™ä¸ªæ–‡ä»¶ï¼Œå‡†å¤‡æ‰§è¡Œ
+        // Ã»ÓĞ³ö´íµÄÇé¿öÏÂ£¬¾ÍÊÇÃ»ÓĞÕâ¸öÎÄ¼ş£¬×¼±¸Ö´ĞĞ
         if (current_health_check_info->if_check_is_necessary) {
-            pre_push_lable();
+            pre_push_label();
             do_the_check();
         } else {
-            file.read((char*)(current_health_check_info), sizeof(health_check_info));
+            file.read(reinterpret_cast<char*>(current_health_check_info), sizeof(health_check_info));
         }
     }
-    file.close(); // åŠæ—¶å…³é—­
+    file.close(); // ¼°Ê±¹Ø±Õ
 }
-// ä¸Šé¢è¿™ä¸ªå‡½æ•°å·²è¢«å¼ƒç”¨
+
+// ÉÏÃæÕâ¸öº¯ÊıÒÑ±»ÆúÓÃ
 
 void daily_health_check_user::try_to_load_from_file_new(const string& input_sno)
 {
-    cached_health_check_info = new health_check_info; // ç¼“å­˜ï¼Œç”¨äºæ¯”å¯¹ä¿¡æ¯
+    cached_health_check_info_tr = new health_check_info_trans;
+    cached_health_check_info = new health_check_info;
     fstream file;
-    bool if_file_is_empty = check_if_file_is_empty();
-    if (if_file_is_empty) { // æ–‡ä»¶æ˜¯ç©ºçš„
-        // ä¿ç•™ current_health_check_info ä¸­çš„é»˜è®¤å‚æ•°
+    const bool if_file_is_empty = check_if_file_is_empty();
+    if (if_file_is_empty) {
+        // ÎÄ¼şÊÇ¿ÕµÄ
+        // ±£Áô current_health_check_info ÖĞµÄÄ¬ÈÏ²ÎÊı
     } else {
         file.open(daily_health_check_file_location, ios::in | ios::binary);
         if (!file.is_open()) {
-            delete cached_health_check_info;
-            // ç°åœ¨ä¸€å®šå­˜åœ¨è¿™ä¸ªæ–‡ä»¶ï¼Œæ‰“ä¸å¼€å°±æ˜¯å¤±è´¥
-            cout << "æ— æ³•æ‰“å¼€ daily_health_check_list.datï¼å³å°†è‡ªåŠ¨é€€å‡ºç¨‹åº ... " << endl;
+            // ÏÖÔÚÒ»¶¨´æÔÚÕâ¸öÎÄ¼ş£¬´ò²»¿ª¾ÍÊÇÊ§°Ü
+            cout << "ÎŞ·¨´ò¿ª daily_health_check_list.dat£¡¼´½«×Ô¶¯ÍË³ö³ÌĞò ... " << endl;
             Sleep(250);
             exit(-1);
         }
-        while (file.read((char*)(cached_health_check_info), sizeof(health_check_info))) {
+        while (file.read(reinterpret_cast<char*>(cached_health_check_info_tr),
+            sizeof(health_check_info_trans))) {
+            *cached_health_check_info = *cached_health_check_info_tr;
             if (cached_health_check_info->account_id == current_health_check_info->account_id) {
                 // move value
-                current_health_check_info = std::move(cached_health_check_info); // è´¼å¥½ç”¨è¿™ä¸ª
+                *current_health_check_info = *cached_health_check_info; // ÒÑ¾­Íê³ÉÔËËã·ûÖØÔØ
                 break;
             }
         }
-        file.close(); // åŠæ—¶å…³é—­
-        delete cached_health_check_info; // è§£é™¤ç¼“å­˜
+        file.close(); // ¼°Ê±¹Ø±Õ
+        delete cached_health_check_info_tr; // ½â³ı»º´æ
+        delete cached_health_check_info; // ½â³ı»º´æ
+        cached_health_check_info_tr = nullptr;
+        cached_health_check_info = nullptr;
     }
 }
 
 void daily_health_check_user::do_the_check()
 {
-    // å¯èƒ½ç”¨åˆ°çš„æ–‡ä»¶å [å¼ƒç”¨]
+    // ¿ÉÄÜÓÃµ½µÄÎÄ¼şÃû [ÆúÓÃ]
     // const string file_name = file_root + current_health_check_info->student_id + "_daily_check.dat";
-    // æ˜¯å¦è¯¢é—® æ˜¯å¦è¿”æ ¡
-    bool if_ask_if_accomodated;
-    // æ˜¯å¦è¿”æ ¡
+    // ÊÇ·ñÑ¯ÎÊ ÊÇ·ñ·µĞ£
+    bool if_ask_if_accommodated;
+    // ÊÇ·ñ·µĞ£
     while (true) {
         cout << endl;
-        cout << "è¯·é—®ä½ æ˜¯å¦å·²ç»è¿”æ ¡ ï¼Ÿ(Y/N) >>> ";
+        cout << "ÇëÎÊÄãÊÇ·ñÒÑ¾­·µĞ£ £¿(Y/N) >>> ";
         char temp;
         cin >> temp;
         if (temp == 'y' || temp == 'Y') {
             current_health_check_info->if_returned_school = true;
-            if_ask_if_accomodated = true;
+            if_ask_if_accommodated = true;
             break;
         } else if (temp == 'n' || temp == 'N') {
             current_health_check_info->if_returned_school = false;
-            if_ask_if_accomodated = false;
+            if_ask_if_accommodated = false;
             break;
         } else {
-            cout << "è¾“å…¥çš„å­—ç¬¦æ— æ•ˆï¼Œè¯·è¾“å…¥Y/y/N/nï¼Œå°†å†æ¬¡æ˜¾ç¤ºä¹‹å‰çš„é€‰é¡¹ï¼š" << endl;
+            cout << "ÊäÈëµÄ×Ö·ûÎŞĞ§£¬ÇëÊäÈëY/y/N/n£¬½«ÔÙ´ÎÏÔÊ¾Ö®Ç°µÄÑ¡Ïî£º" << endl;
         }
     }
-    // æ˜¯å¦ä½æ ¡
-    if (!if_ask_if_accomodated) {
-        current_health_check_info->if_is_accomodated = false;
+    // ÊÇ·ñ×¡Ğ£
+    if (!if_ask_if_accommodated) {
+        current_health_check_info->if_is_accommodated = false;
     } else {
         while (true) {
             cout << endl;
-            cout << "è¯·é—®ä½ æ˜¯å¦ä½æ ¡ ï¼Ÿ(Y/N) >>> ";
-            char temp;
+            cout << "ÇëÎÊÄãÊÇ·ñ×¡Ğ£ £¿(Y/N) >>> ";
+            string temp;
             cin >> temp;
-            if (temp == 'y' || temp == 'Y') {
-                current_health_check_info->if_is_accomodated = true;
+            if (temp == "y" || temp == "Y") {
+                current_health_check_info->if_is_accommodated = true;
                 break;
-            } else if (temp == 'n' || temp == 'N') {
-                current_health_check_info->if_is_accomodated = false;
+            } else if (temp == "n" || temp == "N") {
+                current_health_check_info->if_is_accommodated = false;
                 break;
             } else {
-                cout << "è¾“å…¥çš„å­—ç¬¦æ— æ•ˆï¼Œè¯·è¾“å…¥Y/y/N/nï¼Œå°†å†æ¬¡æ˜¾ç¤ºä¹‹å‰çš„é€‰é¡¹ï¼š" << endl;
+                cout << "ÊäÈëµÄ×Ö·ûÎŞĞ§£¬ÇëÊäÈëY/y/N/n£¬½«ÔÙ´ÎÏÔÊ¾Ö®Ç°µÄÑ¡Ïî£º" << endl;
             }
         }
     }
-    // ä½“æ¸©æ˜¯å¦æ­£å¸¸
+    // ÌåÎÂÊÇ·ñÕı³£
     while (true) {
         cout << endl;
-        cout << "è¯·é—®ä½ çš„ä½“æ¸©æ˜¯å¦è¶…è¿‡ 37â„ƒ ï¼Ÿ(Y/N) >>> ";
-        char temp;
+        cout << "ÇëÎÊÄãµÄÌåÎÂÊÇ·ñ³¬¹ı 37 ÉãÊÏ¶È £¿(Y/N) >>> ";
+        string temp;
         cin >> temp;
-        if (temp == 'y' || temp == 'Y') {
+        if (temp == "y" || temp == "Y") {
             current_health_check_info->if_temperature_higher_than_37 = true;
             break;
-        } else if (temp == 'n' || temp == 'N') {
+        } else if (temp == "n" || temp == "N") {
             current_health_check_info->if_temperature_higher_than_37 = false;
             break;
         } else {
-            cout << "è¾“å…¥çš„å­—ç¬¦æ— æ•ˆï¼Œè¯·è¾“å…¥Y/y/N/nï¼Œå°†å†æ¬¡æ˜¾ç¤ºä¹‹å‰çš„é€‰é¡¹ï¼š" << endl;
+            cout << "ÊäÈëµÄ×Ö·ûÎŞĞ§£¬ÇëÊäÈëY/y/N/n£¬½«ÔÙ´ÎÏÔÊ¾Ö®Ç°µÄÑ¡Ïî£º" << endl;
         }
     }
-    // 14å¤©å†… æ˜¯å¦æ›¾ç»åœ¨ ä¸­é£é™©/é«˜é£é™©åœ°åŒº åœç•™è¶…è¿‡ä¸€å¤©
+    // 14ÌìÄÚ ÊÇ·ñÔø¾­ÔÚ ÖĞ·çÏÕ/¸ß·çÏÕµØÇø Í£Áô³¬¹ıÒ»Ìì
     if (if_have_medium_and_high_risk_region_direct()) {
         while (true) {
             cout << endl;
-            cout << "14å¤©å†…ï¼Œæ˜¯å¦æ›¾ç»åœ¨ <ä¸­é£é™©/é«˜é£é™©åœ°åŒº> åœç•™è¶…è¿‡ä¸€å¤© " << endl
-                 << "(0=>æ— ï¼Œ1=>åœ¨ä¸­é£é™©åŒºåŸŸåœç•™è¶…è¿‡ä¸€å¤©ï¼Œ2=>åœ¨é«˜é£é™©åŒºåŸŸåœç•™è¶…è¿‡ä¸€å¤©ï¼Œ3=>æ˜¾ç¤ºä¸­ã€é«˜é£é™©åŒºåŸŸåˆ—è¡¨) >>> ";
-            int temp;
+            cout << "14ÌìÄÚ£¬ÊÇ·ñÔø¾­ÔÚ <ÖĞ·çÏÕ/¸ß·çÏÕµØÇø> Í£Áô³¬¹ıÒ»Ìì " << endl
+                 << "(0=>ÎŞ£¬1=>ÔÚÖĞ·çÏÕÇøÓòÍ£Áô³¬¹ıÒ»Ìì£¬2=>ÔÚ¸ß·çÏÕÇøÓòÍ£Áô³¬¹ıÒ»Ìì£¬3=>ÏÔÊ¾ÖĞ¡¢¸ß·çÏÕÇøÓòÁĞ±í) >>> ";
+            string temp;
             cin >> temp;
-            if (temp == 0) {
+            if (temp == "0") {
                 current_health_check_info->if_passed_by_high_risk_regions = false;
-                current_health_check_info->if_passed_by_midium_risk_regions = false;
-            } else if (temp == 1) {
-                current_health_check_info->if_passed_by_midium_risk_regions = true;
+                current_health_check_info->if_passed_by_medium_risk_regions = false;
+            } else if (temp == "1") {
+                current_health_check_info->if_passed_by_medium_risk_regions = true;
                 current_health_check_info->if_passed_by_high_risk_regions = false;
-            } else if (temp == 2) {
+            } else if (temp == "2") {
                 current_health_check_info->if_passed_by_high_risk_regions = true;
-                current_health_check_info->if_passed_by_midium_risk_regions = false;
-            } else if (temp == 3) {
+                current_health_check_info->if_passed_by_medium_risk_regions = false;
+            } else if (temp == "3") {
                 // TODO: function_show_high_and_medium_risk_regions
                 show_province_info_direct();
+                continue; // ±ØĞëÓĞ£¬·ñÔò¾ÍÌø¹ıÈ¥ÁË
             } else {
-                cout << "è¾“å…¥çš„å­—ç¬¦æ— æ•ˆï¼Œè¯·è¾“å…¥0/1/2/3ï¼Œå°†å†æ¬¡æ˜¾ç¤ºä¹‹å‰çš„é€‰é¡¹ï¼š" << endl;
+                cout << "ÊäÈëµÄ×Ö·ûÎŞĞ§£¬ÇëÊäÈë0/1/2/3£¬½«ÔÙ´ÎÏÔÊ¾Ö®Ç°µÄÑ¡Ïî£º" << endl;
+                continue;
             }
+            break;
         }
     } else {
-        current_health_check_info->if_passed_by_midium_risk_regions = false;
+        current_health_check_info->if_passed_by_medium_risk_regions = false;
         current_health_check_info->if_passed_by_high_risk_regions = false;
         cout << endl
-             << "ç›®å‰ï¼Œ34ä¸ªçœçº§åŒºåŸŸï¼Œå‡ä¸ºä½é£é™©åŒºï¼Œç³»ç»Ÿå°†è·³è¿‡ <æ˜¯å¦åœ¨ä¸­é«˜é£é™©åŒºåœç•™> è¿™ä¸€é€‰é¡¹ï¼" << endl;
+             << "Ä¿Ç°£¬34¸öÊ¡¼¶ÇøÓò£¬¾ùÎªµÍ·çÏÕÇø£¬ÏµÍ³½«Ìø¹ı <ÊÇ·ñÔÚÖĞ¸ß·çÏÕÇøÍ£Áô> ÕâÒ»Ñ¡Ïî£¡" << endl;
     }
-    // æ˜¯å¦æœ‰å‡ºå›½æ—…å±…å²
+    // ÊÇ·ñÓĞ³ö¹úÂÃ¾ÓÊ·
     while (true) {
         cout << endl;
-        cout << "è¿‘æœŸæ˜¯å¦æœ‰å‡ºå›½æ—…å±…å² ï¼Ÿ(Y/N) >>> ";
-        char temp;
+        cout << "½üÆÚÊÇ·ñÓĞ³ö¹úÂÃ¾ÓÊ· £¿(Y/N) >>> ";
+        string temp;
         cin >> temp;
-        if (temp == 'y' || temp == 'Y') {
-            current_health_check_info->if_temperature_higher_than_37 = true;
+        if (temp == "y" || temp == "Y") {
+            current_health_check_info->if_go_abroad = true;
             break;
-        } else if (temp == 'n' || temp == 'N') {
-            current_health_check_info->if_temperature_higher_than_37 = false;
+        } else if (temp == "n" || temp == "N") {
+            current_health_check_info->if_go_abroad = false;
             break;
         } else {
-            cout << "è¾“å…¥çš„å­—ç¬¦æ— æ•ˆï¼Œè¯·è¾“å…¥Y/y/N/nï¼Œå°†å†æ¬¡æ˜¾ç¤ºä¹‹å‰çš„é€‰é¡¹ï¼š" << endl;
+            cout << "ÊäÈëµÄ×Ö·ûÎŞĞ§£¬ÇëÊäÈëY/y/N/n£¬½«ÔÙ´ÎÏÔÊ¾Ö®Ç°µÄÑ¡Ïî£º" << endl;
         }
     }
-    // æ›´æ–°æ‰“å¡çš„å®Œæˆæƒ…å†µ
+    // ¸üĞÂ´ò¿¨µÄÍê³ÉÇé¿ö
     current_health_check_info->if_checked = true;
-    // å†™å…¥ æ‰“å¡æ–‡ä»¶
-    write_to_file_new(); // é‡‡ç”¨ æ–°å‡½æ•°
+    // Ğ´Èë ´ò¿¨ÎÄ¼ş
+    write_to_file_new(); // ²ÉÓÃ ĞÂº¯Êı
     // end
     cout << endl;
-    cout << "æ‚¨å·²å®Œæˆ <æ¯æ—¥å¥åº·æ‰“å¡> ï¼Œæ„Ÿè°¢æ‚¨çš„é…åˆï¼" << endl;
+    cout << "ÄúÒÑÍê³É <Ã¿ÈÕ½¡¿µ´ò¿¨> £¬¸ĞĞ»ÄúµÄÅäºÏ£¡" << endl;
 }
 
-void daily_health_check_user::write_to_file(const string& filename)
+void daily_health_check_user::show_check_status() const
+{
+    // Õ¹Ê¾µ±Ç°ÓÃ»§µÄ´ò¿¨×´Ì¬
+    cout << "¼´½«Õ¹Ê¾ ÄúÄ¿Ç°µÄ ½¡¿µ´ò¿¨×´Ì¬ ... " << endl;
+    cout << "=======================================================" << endl;
+    cout << "\t"
+         << "ÓÃ»§Ãû£º " << current_health_check_info->account_id << endl;
+    cout << "\t"
+         << "ĞÕÃû£º " << current_health_check_info->student_name << endl;
+    cout << "\t"
+         << "Ñ§ºÅ£º " << current_health_check_info->student_id << endl;
+    cout << "\t"
+         << "ÊÇ·ñ±»Ç¿ÖÆ´ò¿¨£º " << trans_bool(current_health_check_info->if_check_is_necessary) << endl;
+    cout << "\t"
+         << "ÊÇ·ñÍê³É´ò¿¨£º " << trans_bool(current_health_check_info->if_checked) << endl;
+    cout << "\t"
+         << "ÊÇ·ñÒÑ¾­·µĞ££º " << trans_bool(current_health_check_info->if_returned_school) << endl;
+    cout << "\t"
+         << "ÊÇ·ñ×¡Ğ££º " << trans_bool(current_health_check_info->if_is_accommodated) << endl;
+    cout << "\t"
+         << "½ü14ÌìÊÇ·ñÔÚ ¸ß·çÏÕµØÇø Í£Áô³¬¹ı1Ìì£º " << trans_bool(current_health_check_info->if_passed_by_high_risk_regions) << endl;
+    cout << "\t"
+         << "½ü14ÌìÊÇ·ñÔÚ ÖĞ·çÏÕµØÇø Í£Áô³¬¹ı1Ìì£º " << trans_bool(current_health_check_info->if_passed_by_medium_risk_regions) << endl;
+    cout << "\t"
+         << "µ±Ìì×î¸ßÌåÎÂÊÇ·ñ³¬¹ı 37ÉãÊÏ¶È£º " << trans_bool(current_health_check_info->if_temperature_higher_than_37) << endl;
+    cout << "\t"
+         << "½ü14ÌìÊÇ·ñÓĞ Íâ¹úÂÃ¾ÓÊ·£º " << trans_bool(current_health_check_info->if_go_abroad) << endl;
+    cout << "=======================================================" << endl;
+    cout << "ÏÔÊ¾Íê±Ï£¡" << endl
+         << endl;
+    Sleep(500);
+    cout << "°´ÏÂÈÎÒâ¼üºó£¬·µ»Ø [ÓÃ»§¶Ë¹¦ÄÜ²Ëµ¥] ... " << endl;
+    _getch();
+}
+
+void daily_health_check_user::write_to_file(const string& filename) const
 {
     fstream file;
     file.open(filename, ios::trunc | ios::binary | ios::out);
     if (!file.is_open()) {
-        cout << "ä¿¡æ¯å†™å…¥é˜¶æ®µï¼Œæ‰“å¼€ xx_daily_check.dat å¤±è´¥ï¼å³å°†é€€å‡ºç¨‹åº" << endl;
+        cout << "ĞÅÏ¢Ğ´Èë½×¶Î£¬´ò¿ª xx_daily_check.dat Ê§°Ü£¡¼´½«ÍË³ö³ÌĞò" << endl;
         Sleep(250);
         exit(-1);
     }
-    file.write((char*)(current_health_check_info), sizeof(health_check_info));
+    file.write(reinterpret_cast<char*>(current_health_check_info), sizeof(health_check_info));
     file.close();
 }
 
 void daily_health_check_user::write_to_file_new()
 {
     cached_health_check_info = new health_check_info;
+    cached_health_check_info_tr = new health_check_info_trans;
     fstream file(daily_health_check_file_location, ios::in | ios::binary);
     if (!file.is_open()) {
-        cout << "ä¿¡æ¯å†™å…¥é˜¶æ®µï¼Œæ‰“å¼€ daily_health_check_list.dat å¤±è´¥ï¼å³å°†é€€å‡ºç¨‹åº ... " << endl;
+        cout << "ĞÅÏ¢Ğ´Èë½×¶Î£¬´ò¿ª daily_health_check_list.dat Ê§°Ü£¡¼´½«ÍË³ö³ÌĞò ... " << endl;
         Sleep(250);
         exit(-1);
     }
-    if (!if_daily_check_file_is_empty) { // æ–‡ä»¶é‡Œä¸æ˜¯ç©ºçš„ => éœ€è¦æ‰¾åˆ°æ­£ç¡®çš„ä½ç½®
-        int POS;
-        while (file.read((char*)(cached_health_check_info), sizeof(health_check_info))) {
+    if (!if_daily_check_file_is_empty) {
+        // ÎÄ¼şÀï²»ÊÇ¿ÕµÄ => ĞèÒªÕÒµ½ÕıÈ·µÄÎ»ÖÃ
+        auto POS = file.tellg();
+        while (file.read(reinterpret_cast<char*>(cached_health_check_info_tr),
+            sizeof(health_check_info_trans))) {
+            *cached_health_check_info = cached_health_check_info_tr;
             if (cached_health_check_info->student_id == current_health_check_info->student_id) {
-                POS = file.tellg();
                 break;
             }
+            POS = file.tellg();
         }
         file.close();
-        file.open(daily_health_check_file_location, ios::out | ios::binary);
+        file.open(daily_health_check_file_location, ios::in | ios::binary | ios::out); // ²»ÄÜ ios::out£¬ÕâÑù»áÇå³ıÎÄ¼ş
         if (!file.is_open()) {
-            cout << "ä¿¡æ¯å†™å…¥é˜¶æ®µï¼Œæ‰“å¼€ daily_health_check_list.dat å¤±è´¥ï¼å³å°†é€€å‡ºç¨‹åº ... " << endl;
+            cout << "ĞÅÏ¢Ğ´Èë½×¶Î£¬´ò¿ª daily_health_check_list.dat Ê§°Ü£¡¼´½«ÍË³ö³ÌĞò ... " << endl;
             Sleep(250);
             exit(-1);
         }
         file.seekp(POS, ios::beg);
-        file.write((char*)(current_health_check_info), sizeof(health_check_info));
+        *cached_health_check_info_tr = *current_health_check_info;
+        file.write(reinterpret_cast<char*>(cached_health_check_info_tr), sizeof(health_check_info_trans));
         file.close();
-    } else { // æ–‡ä»¶æ˜¯ç©ºçš„ => ç›´æ¥ä¸ç”¨æ‰¾ä½ç½®äº†ï¼Œå†™åˆ°å¤´ä¸Šå°±å®Œå…¨OK
+    } else {
+        // ÎÄ¼şÊÇ¿ÕµÄ => Ö±½Ó²»ÓÃÕÒÎ»ÖÃÁË£¬Ğ´µ½Í·ÉÏ¾ÍÍêÈ«OK
         file.close();
-        file.open(daily_health_check_file_location, ios::out | ios::binary);
+        file.open(daily_health_check_file_location, ios::out | ios::binary | ios::in); // ios::in Êµ¼ÊÉÏÊÇÈßÓàÏîÄ¿£¬¿ÉÒÔÈ¥µô£¬µ«ÊÇÓĞ±ØÒª¼ÓÉÏ·ÀÖ¹ÒâÍâflushµôÎÄ¼ş
         if (!file.is_open()) {
-            cout << "ä¿¡æ¯å†™å…¥é˜¶æ®µï¼Œæ‰“å¼€ daily_health_check_list.dat å¤±è´¥ï¼å³å°†é€€å‡ºç¨‹åº ... " << endl;
+            cout << "ĞÅÏ¢Ğ´Èë½×¶Î£¬´ò¿ª daily_health_check_list.dat Ê§°Ü£¡¼´½«ÍË³ö³ÌĞò ... " << endl;
             Sleep(250);
             exit(-1);
         }
-        file.write((char*)(current_health_check_info), sizeof(health_check_info));
+        *cached_health_check_info_tr = *current_health_check_info;
+        file.write(reinterpret_cast<char*>(cached_health_check_info_tr), sizeof(health_check_info_trans));
         file.close();
     }
+    delete cached_health_check_info;
+    delete cached_health_check_info_tr;
+    cached_health_check_info = nullptr;
+    cached_health_check_info_tr = nullptr;
 }
 
 void daily_health_check_user::show_province_info_direct()
 {
-    // ç”±äº [å±•ç¤ºå‡½æ•°] æ˜¯publicçš„ï¼Œæ‰€æœ‰ä¸éœ€è¦ç»§æ‰¿æˆ–è€…å‹å…ƒå‡½æ•°ï¼Œç›´æ¥ä¸´æ—¶è°ƒç”¨å°±å¯ä»¥
-    auto* temp = new province_information_manager;
-    //
+    // ÓÉÓÚ [Õ¹Ê¾º¯Êı] ÊÇpublicµÄ£¬ËùÓĞ²»ĞèÒª¼Ì³Ğ»òÕßÓÑÔªº¯Êı£¬Ö±½ÓÁÙÊ±µ÷ÓÃ¾Í¿ÉÒÔ
+    const auto* temp = new province_information_manager;
     temp->show_high_and_medium_risk_regions();
     delete temp;
 }
 
-auto daily_health_check_user::if_have_medium_and_high_risk_region_direct() -> bool
+bool daily_health_check_user::if_have_medium_and_high_risk_region_direct()
 {
-    // ç”±äº [åˆ¤æ–­å‡½æ•°] æ˜¯publicçš„ï¼Œæ‰€æœ‰ä¸éœ€è¦ç»§æ‰¿æˆ–è€…å‹å…ƒå‡½æ•°ï¼Œç›´æ¥ä¸´æ—¶è°ƒç”¨å°±å¯ä»¥
-    bool result;
     auto* temp = new province_information_manager;
-    //
-    result = temp->if_have_high_and_medium_risk_regions();
+    const bool result = temp->if_have_high_and_medium_risk_regions();
     delete temp;
     return result;
 }

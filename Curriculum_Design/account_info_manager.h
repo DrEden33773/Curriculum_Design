@@ -2,20 +2,22 @@
 
 #pragma once
 
-#include "user_AccountInfoReceiver.h" // 多级继承
+#include "account.h"
+#include "user_AccountInfoReceiver.h"
 
-class account_info_manager : public user_info_receiver {
+class account_info_manager : public user_info_receiver, public account_manager {
 protected:
-    const string user_list_file_location = R"(C:\Users\edwar\Desktop\cpp_final_task\user_list.dat)";
-    const string account_info_file_location = R"(C:\Users\edwar\Desktop\cpp_final_task\account_info.dat)";
-    const string temp_user_list_file_location = R"(C:\Users\edwar\Desktop\cpp_final_task\temp_user_list.dat)";
-    const string temp_account_info_file_location = R"(C:\Users\edwar\Desktop\cpp_final_task\temp_account_info.dat)";
+    const string user_list_file_location_ = R"(C:\Users\edwar\Desktop\cpp_final_task\user_list.dat)";
+    const string account_info_file_location_ = R"(C:\Users\edwar\Desktop\cpp_final_task\account_info.dat)";
+    const string temp_user_list_file_location_ = R"(C:\Users\edwar\Desktop\cpp_final_task\temp_user_list.dat)";
+    const string temp_account_info_file_location_ = R"(C:\Users\edwar\Desktop\cpp_final_task\temp_account_info.dat)";
     // 后处理函数 -- done
-    auto if_input_user_exists(const string&, const int& mode, const bool& if_print) -> bool; // 检验 输入用户[精确匹配] 是否存在 (可以指定是否打印存在的用户)
-    auto if_input_user_exists_sub(const string&, const int& mode, const bool& if_print) -> bool; // 功能类似上述，但是，是[模糊匹配]
-    inline void print_detail_info();
-    inline void print_partial_matched_info();
-    inline void open_all_files(fstream& account_info_file, fstream& user_list_file);
+    bool if_input_sno_exists(const string& input_sno); // 输入的 学号 是否存在 [精确匹配，不是模糊匹配]
+    bool if_input_user_exists(const string&, const int& mode, const bool& if_print); // 检验 输入用户[精确匹配] 是否存在 (可以指定是否打印存在的用户)
+    bool if_input_user_exists_sub(const string&, const int& mode, const bool& if_print); // 功能类似上述，但是，是[模糊匹配]
+    inline void print_detail_info() const;
+    inline void print_partial_matched_info() const;
+    inline void open_all_files(fstream& account_info_file, fstream& user_list_file) const;
     /* [mode => 1.学号精确搜索 2.姓名精确搜索 3.用户名精确搜索] */
     // 展示信息 -- done
     void precisely_show_specific_user_info(); // 精确搜索 用户 [可以是用户名，也可以是学号，还可以是姓名]
@@ -36,6 +38,7 @@ protected:
     void delete_a_user(); // 删除一个用户
 
 public:
-    account_info_manager();
+    account_info_manager() = default;
+    ~account_info_manager();
     void shell_of_account_info_manager(); // 操作界面
 };

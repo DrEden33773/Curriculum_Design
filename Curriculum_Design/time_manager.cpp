@@ -2,58 +2,93 @@
 #include "time_manager.h"
 #include <ctime>
 #include <iomanip>
-#include <iostream>
 using namespace std;
+
+bool time_manager::if_date_valid(const time_manager* input)
+{
+    bool if_year_valid = false;
+    bool if_month_valid = false;
+    bool if_day_valid = false;
+    if (input->dtime_.year >= 0) {
+        if_year_valid = true;
+    }
+    if (input->dtime_.month >= 1 && input->dtime_.month <= 12) {
+        if_month_valid = true;
+        if (input->dtime_.month == 1 ||
+            input->dtime_.month == 3 ||
+            input->dtime_.month == 5 ||
+            input->dtime_.month == 7 ||
+            input->dtime_.month == 8 ||
+            input->dtime_.month == 10 ||
+            input->dtime_.month == 12) {
+            if (input->dtime_.day >= 0 && input->dtime_.day <= 31) {
+                if_day_valid = true;
+            }
+        } else if (input->dtime_.month == 2) {
+            if (if_leap_year_in_class(input)) {
+                if (input->dtime_.day >= 0 && input->dtime_.day <= 29) {
+                    if_day_valid = true;
+                }
+            } else {
+                if (input->dtime_.day >= 0 && input->dtime_.day <= 28) {
+                    if_day_valid = true;
+                }
+            }
+        } else {
+            if (input->dtime_.day >= 0 && input->dtime_.day <= 30) {
+                if_day_valid = true;
+            }
+        }
+    }
+    return if_day_valid && if_year_valid && if_month_valid;
+}
 
 bool time_manager::if_leap_year_in_class(const time_manager* input)
 {
-    bool status_1 = input->dtime->year % 4 == 0 && input->dtime->year % 100 != 0;
-    bool status_2 = input->dtime->year % 400 == 0;
-    return (status_1 || status_2);
+    const bool status_1 = input->dtime_.year % 4 == 0 && input->dtime_.year % 100 != 0;
+    const bool status_2 = input->dtime_.year % 400 == 0;
+    return status_1 || status_2;
 }
 
 bool if_leap_year(const int& year)
 {
-    bool status_1 = year % 4 == 0 && year % 100 != 0;
-    bool status_2 = year % 400 == 0;
-    return (status_1 || status_2);
+    const bool status_1 = year % 4 == 0 && year % 100 != 0;
+    const bool status_2 = year % 400 == 0;
+    return status_1 || status_2;
 }
 
 bool time_manager::if_reach_the_end_of_month(const time_manager* input)
 {
     bool result;
-    if (input->dtime->month == 1 || input->dtime->month == 3 || input->dtime->month == 5 || input->dtime->month == 7 || input->dtime->month == 8 || input->dtime->month == 10 || input->dtime->month == 12) {
-        result = (input->dtime->day == 31) ? true : false;
-    } else if (input->dtime->month == 2) {
+    if (input->dtime_.month == 1 || input->dtime_.month == 3 || input->dtime_.month == 5 || input->dtime_.month == 7 || input->dtime_.month == 8 || input->dtime_.month == 10 || input->dtime_.month == 12) {
+        result = input->dtime_.day == 31 ? true : false;
+    } else if (input->dtime_.month == 2) {
         if (if_leap_year_in_class(input)) {
-            result = (input->dtime->day == 29) ? true : false;
+            result = input->dtime_.day == 29 ? true : false;
         } else {
-            result = (input->dtime->day == 28) ? true : false;
+            result = input->dtime_.day == 28 ? true : false;
         }
     } else {
-        result = (input->dtime->day == 30) ? true : false;
+        result = input->dtime_.day == 30 ? true : false;
     }
     return result;
 }
 
 bool time_manager::if_reach_the_end_of_year(const time_manager* input)
 {
-    bool result;
-    result = (input->dtime->month == 12 && input->dtime->day == 31) ? true : false;
+    const bool result = input->dtime_.month == 12 && input->dtime_.day == 31 ? true : false;
     return result;
 }
 
 bool time_manager::if_reach_the_start_of_month(const time_manager* input)
 {
-    bool result;
-    result = (input->dtime->day == 1) ? true : false;
+    const bool result = input->dtime_.day == 1 ? true : false;
     return result;
 }
 
 bool time_manager::if_reach_the_start_of_year(const time_manager* input)
 {
-    bool result;
-    result = (input->dtime->month == 1 && input->dtime->day == 1) ? true : false;
+    const bool result = input->dtime_.month == 1 && input->dtime_.day == 1 ? true : false;
     return result;
 }
 
@@ -61,15 +96,15 @@ time_manager time_manager::update_date()
 {
     if (if_reach_the_end_of_month(this)) {
         if (if_reach_the_end_of_year(this)) {
-            this->dtime->day = 1;
-            this->dtime->month = 1;
-            ++this->dtime->year;
+            this->dtime_.day = 1;
+            this->dtime_.month = 1;
+            ++this->dtime_.year;
         } else {
-            this->dtime->day = 1;
-            ++this->dtime->month;
+            this->dtime_.day = 1;
+            ++this->dtime_.month;
         }
     } else {
-        ++this->dtime->day;
+        ++this->dtime_.day;
     }
     return *this;
 }
@@ -78,25 +113,26 @@ time_manager time_manager::update_date_minus()
 {
     if (if_reach_the_start_of_month(this)) {
         if (if_reach_the_start_of_year(this)) {
-            this->dtime->day = 1;
-            this->dtime->month = 1;
-            --this->dtime->year;
+            this->dtime_.day = 1;
+            this->dtime_.month = 1;
+            --this->dtime_.year;
         } else {
-            this->dtime->day = 1;
-            --this->dtime->month;
+            this->dtime_.day = 1;
+            --this->dtime_.month;
         }
     } else {
-        --this->dtime->day;
+        --this->dtime_.day;
     }
     return *this;
 }
 
-void time_manager::sync_system_time() // ¸ĞĞ» "²ËÄñ½Ì³Ì" ÍøµÄ¾«Æ·Ê¾Àı£¬ÕæµÄÌØ±ğ°ô£¡ºİºİµØ°®×¡ÁË£¡
+void time_manager::sync_system_time()
+// ¸ĞĞ» "²ËÄñ½Ì³Ì" ÍøµÄ¾«Æ·Ê¾Àı£¬ÕæµÄÌØ±ğ°ô£¡ºİºİµØ°®×¡ÁË£¡
 {
     // Í¬²½ÏµÍ³Ê±¼ä
-    time_t now = time(0); // »ùÓÚµ±Ç°ÏµÍ³µÄµ±Ç°ÈÕÆÚ/Ê±¼ä
+    const time_t now = time(nullptr); // »ùÓÚµ±Ç°ÏµÍ³µÄµ±Ç°ÈÕÆÚ/Ê±¼ä
     // cout << "1970 µ½Ä¿Ç°¾­¹ıÃëÊı:" << now << endl;
-    tm* ltm = localtime(&now);
+    const tm* ltm = localtime(&now);
     // Êä³ö tm ½á¹¹µÄ¸÷¸ö×é³É²¿·Ö
     // cout << "Äê: " << 1900 + ltm->tm_year << endl;
     // cout << "ÔÂ: " << 1 + ltm->tm_mon << endl;
@@ -104,38 +140,40 @@ void time_manager::sync_system_time() // ¸ĞĞ» "²ËÄñ½Ì³Ì" ÍøµÄ¾«Æ·Ê¾Àı£¬ÕæµÄÌØ±ğ°
     // cout << "Ê±¼ä: " << ltm->tm_hour << ":";
     // cout << ltm->tm_min << ":";
     // cout << ltm->tm_sec << endl;
-    this->dtime->year = 1900 + ltm->tm_year;
-    this->dtime->month = 1 + ltm->tm_mon;
-    this->dtime->day = ltm->tm_mday;
+    this->dtime_.year = 1900 + ltm->tm_year;
+    this->dtime_.month = 1 + ltm->tm_mon;
+    this->dtime_.day = ltm->tm_mday;
     // ±È½ÏÀëÆ×µÄÒ»¸öº¯Êı£¬ÒòÎªctimeÕâÍ·ÎÄ¼ş±È½ÏÀëÆ×
 }
 
-string time_manager::time_str()
+string time_manager::time_str() const
 {
-    char res[10] = { '\0' }; // Ô¤¼ÆµÄÊä³ö¸ñÊ½ => 2022-04-08
-    for (char i : res) {
-        i = '\0';
-    }
-    char temp[8] = { '\0' }; // 80402202 need to be reversed
-    for (char i : temp) {
-        i = '\0';
-    }
-    char revd[8] = { '\0' }; // reversed to 20220408
-    for (char i : revd) {
-        i = '\0';
-    }
+    char res[10]{}; // Ô¤¼ÆµÄÊä³ö¸ñÊ½ => 2022-04-08
+    // for (char i : res) {
+    //     i = '\0';
+    // }
+    char temp[8]{}; // 80402202 need to be reversed
+    // for (char i : temp) {
+    //     i = '\0';
+    // }
+    char revd[8]{}; // reversed to 20220408
+    // for (char i : revd) {
+    //     i = '\0';
+    // }
+
     // tnum
-    int tnum = dtime->year * 10000 + dtime->month * 100 + dtime->day;
+    int tnum = dtime_.year * 10000 + dtime_.month * 100 + dtime_.day;
     // push into temp
-    for (char i : temp) {
-        i = tnum % 10;
+    for (char& i : temp) {
+        // Ò»¶¨ÒªĞ´³É ÒıÓÃ¸ñÊ½£¡·ñÔòĞŞ¸ÄÎŞĞ§
+        i = tnum % 10 + '0';
         tnum /= 10;
     }
 
     int pos, pos_rev, pos_res;
 
     // push into revd
-    for (pos = 9, pos_rev = 0; pos >= 0; --pos, ++pos_rev) {
+    for (pos = 7, pos_rev = 0; pos >= 0; --pos, ++pos_rev) {
         revd[pos_rev] = temp[pos];
     }
     // push into res
@@ -150,25 +188,48 @@ string time_manager::time_str()
     for (; pos_rev < 8; ++pos_rev, ++pos_res) {
         res[pos_res] = revd[pos_rev];
     }
-    // end
-    string result = res;
-    return result;
+    const string result = res;
+    string final_result = result.substr(0, 10);
+    return final_result;
 }
 
 time_manager::time_manager()
 {
-    dtime = new defined_time;
+    // dtime_ = new defined_time;
     //ÎŞ²Î => Ö±½ÓÍ¬²½ÏµÍ³Ê±¼ä
     sync_system_time();
 }
 
 // ÈÕÆÚ³õÊ¼»¯
-time_manager::time_manager(int& year, int& month, int& day)
+time_manager::time_manager(const int& year, const int& month, const int& day)
 {
-    dtime = new defined_time;
-    this->dtime->year = year;
-    this->dtime->month = month;
-    this->dtime->day = day;
+    // dtime_ = new defined_time;
+    this->dtime_.year = year;
+    this->dtime_.month = month;
+    this->dtime_.day = day;
+}
+
+time_manager::time_manager(const time_manager& input)
+{
+    // dtime_ = new defined_time;
+    this->dtime_.year = input.dtime_.year;
+    this->dtime_.month = input.dtime_.month;
+    this->dtime_.day = input.dtime_.day;
+}
+
+time_manager::time_manager(const time_manager* input)
+{
+    // dtime_ = new defined_time;
+    this->dtime_.year = input->dtime_.year;
+    this->dtime_.month = input->dtime_.month;
+    this->dtime_.day = input->dtime_.day;
+}
+
+void time_manager::operator=(const time_manager& input)
+{
+    this->dtime_.year = input.dtime_.year;
+    this->dtime_.month = input.dtime_.month;
+    this->dtime_.day = input.dtime_.day;
 }
 
 time_manager time_manager::operator+=(const int& n)
@@ -187,7 +248,8 @@ time_manager time_manager::operator-=(const int& n)
     return *this;
 }
 
-time_manager time_manager::operator++() // ++time_manager
+time_manager time_manager::operator++()
+// ++time_manager
 {
     return update_date();
 }
@@ -197,9 +259,10 @@ time_manager time_manager::operator--()
     return update_date_minus();
 }
 
-time_manager time_manager::operator++(int any) // time_manager++
+time_manager time_manager::operator++(int any)
+// time_manager++
 {
-    time_manager result = *this;
+    const time_manager result = *this;
     update_date(); // update ×îÖÕ¸ü¸ÄµÄ Ö»ÊÇ this Ö¸ÏòµÄ [µ±Ç°¶ÔÏó]
     // µ«ÊÇÕâÀï result ²¢²»ÊÇ *this µÄÒıÓÃ£¬ÎŞ·¨±»¸ü¸Ä£¬Òò´Ë·µ»ØµÄÊÇÎ´±»¸ü¸ÄÖ®Ç°µÄ [¶ÔÏó]
     // Õâ¸öÇ¡ºÃ·ûºÏ ºóÖÃ++ µÄ Ô­À´ÒâË¼
@@ -236,7 +299,7 @@ int operator-(const time_manager& date1, const time_manager& date2)
     }
     /* ------------------------CORE------------------------ */
     // °ë±éÀúÄê
-    for (int i = small.dtime->year; i < big.dtime->year; ++i) {
+    for (int i = small.dtime_.year; i < big.dtime_.year; ++i) {
         if (if_leap_year(i)) {
             result += 366;
         } else {
@@ -244,46 +307,46 @@ int operator-(const time_manager& date1, const time_manager& date2)
         }
     }
     // °ë±éÀú ´óÄê µÄÔÂ
-    for (int i = 1; i < big.dtime->month; ++i) {
+    for (int i = 1; i < big.dtime_.month; ++i) {
         if (i == 1 || i == 3 || i == 5 || i == 7 || i == 8 || i == 10 || i == 12) {
             result += 31;
         } else if (i == 2) {
-            result += (if_leap_year(big.dtime->year)) ? 29 : 28;
+            result += if_leap_year(big.dtime_.year) ? 29 : 28;
         } else {
             result += 30;
         }
     }
     // °ë±éÀú Ğ¡Äê µÄÔÂ
-    for (int i = 1; i < small.dtime->month; ++i) {
+    for (int i = 1; i < small.dtime_.month; ++i) {
         if (i == 1 || i == 3 || i == 5 || i == 7 || i == 8 || i == 10 || i == 12) {
             result -= 31;
         } else if (i == 2) {
-            result -= (if_leap_year(small.dtime->year)) ? 29 : 28;
+            result -= if_leap_year(small.dtime_.year) ? 29 : 28;
         } else {
             result -= 30;
         }
     }
-    result += big.dtime->day;
-    result -= small.dtime->day;
+    result += big.dtime_.day;
+    result -= small.dtime_.day;
     /* ------------------------END OF CORE------------------------ */
-    result = (if_result_smaller_than_zero) ? ((-1) * result) : ((1) * result);
+    result = if_result_smaller_than_zero ? -1 * result : 1 * result;
     return result;
 }
 
 bool operator==(const time_manager& a, const time_manager& b)
 {
-    bool result = (a.dtime->year == b.dtime->year) && (a.dtime->month == b.dtime->month) && (a.dtime->day == b.dtime->day);
+    const bool result = a.dtime_.year == b.dtime_.year && a.dtime_.month == b.dtime_.month && a.dtime_.day == b.dtime_.day;
     return result;
 }
 
 bool operator>(const time_manager& a, const time_manager& b)
 {
     bool result = false;
-    if (a.dtime->year > b.dtime->year) {
+    if (a.dtime_.year > b.dtime_.year) {
         result = true;
-    } else if (a.dtime->month > b.dtime->month) {
+    } else if (a.dtime_.month > b.dtime_.month) {
         result = true;
-    } else if (a.dtime->day > b.dtime->day) {
+    } else if (a.dtime_.day > b.dtime_.day) {
         result = true;
     } else {
         result = false;
@@ -294,11 +357,11 @@ bool operator>(const time_manager& a, const time_manager& b)
 bool operator<(const time_manager& a, const time_manager& b)
 {
     bool result = false;
-    if (a.dtime->year < b.dtime->year) {
+    if (a.dtime_.year < b.dtime_.year) {
         result = true;
-    } else if (a.dtime->month < b.dtime->month) {
+    } else if (a.dtime_.month < b.dtime_.month) {
         result = true;
-    } else if (a.dtime->day < b.dtime->day) {
+    } else if (a.dtime_.day < b.dtime_.day) {
         result = true;
     } else {
         result = false;
@@ -308,6 +371,6 @@ bool operator<(const time_manager& a, const time_manager& b)
 
 ostream& operator<<(ostream& out, const time_manager& t)
 {
-    out << t.dtime->year << "Äê" << t.dtime->month << "ÔÂ" << t.dtime->day << "ÈÕ";
+    out << t.dtime_.year << "Äê" << t.dtime_.month << "ÔÂ" << t.dtime_.day << "ÈÕ";
     return out;
 }

@@ -1,54 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
   <PropertyGroup>
     <ResolveNugetPackages>false</ResolveNugetPackages>
   </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|arm64">
+    <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
-      <Platform>arm64</Platform>
+      <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|arm64">
+    <ProjectConfiguration Include="Release|x64">
       <Configuration>Release</Configuration>
-      <Platform>arm64</Platform>
+      <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="MinSizeRel|arm64">
+    <ProjectConfiguration Include="MinSizeRel|x64">
       <Configuration>MinSizeRel</Configuration>
-      <Platform>arm64</Platform>
+      <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="RelWithDebInfo|arm64">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
       <Configuration>RelWithDebInfo</Configuration>
-      <Platform>arm64</Platform>
+      <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{1F252613-2727-35A6-8F7B-8681951B1926}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
-    <Platform>arm64</Platform>
+    <Platform>x64</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
@@ -62,12 +62,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
       <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -77,7 +77,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
       <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -87,7 +87,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
       <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -97,7 +97,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
       <AdditionalIncludeDirectories>E:\VS_cpp_projects\Curriculum_Design\Curriculum_Design;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -110,8 +110,8 @@
   <ItemGroup>
     <CustomBuild Include="E:\VS_cpp_projects\Curriculum_Design\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">setlocal
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 C:\CMake\bin\cmake.exe -SE:/VS_cpp_projects/Curriculum_Design -BE:/VS_cpp_projects/Curriculum_Design/build --check-stamp-file E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -120,11 +120,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">setlocal
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
 C:\CMake\bin\cmake.exe -SE:/VS_cpp_projects/Curriculum_Design -BE:/VS_cpp_projects/Curriculum_Design/build --check-stamp-file E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -133,11 +133,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">setlocal
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
 C:\CMake\bin\cmake.exe -SE:/VS_cpp_projects/Curriculum_Design -BE:/VS_cpp_projects/Curriculum_Design/build --check-stamp-file E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -146,11 +146,11 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|arm64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">setlocal
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/VS_cpp_projects/Curriculum_Design/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
 C:\CMake\bin\cmake.exe -SE:/VS_cpp_projects/Curriculum_Design -BE:/VS_cpp_projects/Curriculum_Design/build --check-stamp-file E:/VS_cpp_projects/Curriculum_Design/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -159,9 +159,9 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|arm64'">false</LinkObjects>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\VS_cpp_projects\Curriculum_Design\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

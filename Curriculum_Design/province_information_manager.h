@@ -1,6 +1,5 @@
 #pragma once
 
-#include <fstream>
 #include <iostream>
 #include <string>
 using namespace std;
@@ -43,18 +42,22 @@ private:
         "香港",
         "澳门"
     };
-    int status_of_province[34] = { 0 }; // 省份状态 -- 0=低风险 1=中风险 2=高风险
+    int status_of_province[34] {}; // 省份状态 -- 0=低风险 1=中风险 2=高风险
     string status_list[3] = { "低风险", "中风险", "高风险" };
     string province_file = R"(C:\Users\edwar\Desktop\cpp_final_task\province_information.dat)";
 
 public:
     province_information_manager();
+    void shell_admin(); // 管理员界面
+    static void shell_user(); // 用户界面
+    void show_all_province_status() const; // 显示所有省级区域防疫状态
+    void show_input_province_status() const; // 显示输入区域的防疫状态
+    void show_high_and_medium_risk_regions() const; // 提示 高中风险 地区
+    auto if_have_high_and_medium_risk_regions() -> bool; // 有无高中风险区
+
+private:
     void try_to_load_province_information_file(); // 预加载文件
     void write_province_information_file_trunc(); // 写入文件
     void change_province_status(); // 更改省级区域防疫状态
-    void show_all_province_status(); // 显示所有省级区域防疫状态
-    void show_input_province_status(); // 显示输入区域的防疫状态
-    auto if_input_province_valid(const string&) -> int; // 省份有效性检验 [无效返回-1，有效返回 下标]
-    void show_high_and_medium_risk_regions(); // 提示 高中风险 地区
-    auto if_have_high_and_medium_risk_regions() -> bool; // 有无高中风险区
+    auto if_input_province_valid(const string&) const -> int; // 省份有效性检验 [无效返回-1，有效返回 下标]
 };

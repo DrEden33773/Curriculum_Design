@@ -1,32 +1,73 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "account.h"
+#include <Windows.h>
+#include <conio.h>
 #include <cstring>
 #include <ctime>
 #include <fstream>
 #include <iostream>
 #include <random> // Éú³ÉËæ»úÊı
 #include <string>
-#include <utility>
-#include <windows.h>
-#include <winerror.h>
+
+#include "time_manager.h"
 
 using namespace std;
 
-/*  ²»±ØÔÚÅÉÉúÀàµÄ¹¹Ôìº¯ÊıÖĞµ÷ÓÃ»ùÀàµÄ¹¹Ôìº¯Êı£¬
-    load_used_time_from_fileÄÚº¬³õÊ¼»¯»ùÀàµÄ¹ı³Ì  */
-account_manager::account_manager()
-{ // ÏÈ³õÊ¼»¯
-    load_used_time_from_file(); // ÔÙ¶ÁÎÄ¼ş
+account_manager::account_manager(const string& any)
+{
+    // var_initialization
+    cache = nullptr;
+    cache_base = nullptr;
+    login = nullptr;
+    // ÒÑ¾­ÖØ¹¹
+    // make sure account_list exists
+    fstream file;
+    file.open(account_info_file_location, ios::app | ios::binary);
+    if (!file.is_open()) {
+        cout << "Ô¤¼ÓÔØ account_info.dat Ê§°Ü£¡ ¼´½«ÍË³ö³ÌĞò ... " << endl;
+        Sleep(250);
+        exit(-1);
+    }
+    file.close();
+    // check if file is empty
+    if_acct_info_file_have_admin = false;
+    file.open(account_info_file_location, ios::in | ios::binary);
+    if (!file.is_open()) {
+        cout << "´ò¿ª account_info.dat Ê§°Ü£¡ ¼´½«ÍË³ö³ÌĞò ... " << endl;
+        Sleep(250);
+        exit(-1);
+    }
+    cache_base = new account_info;
+    while (!file.eof()) {
+        file.read(reinterpret_cast<char*>(cache_base), sizeof(account_info));
+        if (cache_base->if_admin) {
+            if_acct_info_file_have_admin = true;
+            break;
+        }
+    }
+    file.close();
 }
 
-//ºó´¦Àíº¯Êı
-auto account_manager::if_password_legal(string temp_password) -> bool
+account_manager::account_manager()
+{
+    if_acct_info_file_have_admin = true;
+    // Reason => the constructor without any parameter will be called in derived class,
+    // and you won't have the chance to use the derived class without successfully used the base class,
+    // which means, you must have created an "admin" account in the account_info.dat
+    cache = nullptr;
+    cache_base = nullptr;
+    login = nullptr;
+}
+
+// ºó´¦Àíº¯Êı
+bool account_manager::if_password_legal(const string& temp_password)
 {
     bool result = false;
     bool if_length = false;
     bool if_number = false;
     bool if_letter = false;
-    int len = temp_password.length(); // »ñÈ¡³¤¶È
-    if (len >= 8)
+    const int len = temp_password.length(); // »ñÈ¡³¤¶È
+    if (len >= 8 && len <= 24) // ÃÜÂë³¤¶È => Ğ¡ÓÚ24
         if_length = true;
     for (int x = 0; x < len; ++x) {
         if (temp_password[x] >= '0' && temp_password[x] <= '9')
@@ -41,82 +82,61 @@ auto account_manager::if_password_legal(string temp_password) -> bool
     return result; // return
 }
 
-void account_manager::write_account_to_list(
-    string temp_account,
-    string temp_password,
-    bool if_admin,
-    char* temp_sp_code)
+bool account_manager::if_account_legal(const string& temp_account)
 {
-    auto* c = new account_info;
-    c->account = std::move(temp_account);
-    c->password = std::move(temp_password);
-    c->if_admin = if_admin;
-    strcpy_s(c->sp_code, temp_sp_code);
-    c->next = nullptr;
-    c->prev = nullptr;
-    if (!head) {
-        head = c;
-        tail = c;
-    } else {
-        tail->next = c;
-        c->prev = tail;
-        tail = c;
+    bool result = false;
+    bool if_length = false;
+    bool if_number = false;
+    bool if_letter = false;
+    const int len = temp_account.length(); // »ñÈ¡³¤¶È
+    if (len >= 8 && len <= 16) // ÕËºÅÃû³¤¶È => ²»³¬¹ı16
+        if_length = true;
+    for (int x = 0; x < len; ++x) {
+        if (temp_account[x] >= '0' && temp_account[x] <= '9')
+            if_number = true;
+        if (temp_account[x] >= 'a' && temp_account[x] <= 'z')
+            if_letter = true;
+        if (temp_account[x] >= 'A' && temp_account[x] <= 'Z')
+            if_letter = true;
     }
+    if (if_number && if_length && if_letter)
+        result = true;
+    return result; // return
 }
 
 void account_manager::write_account_to_cache(
-    string temp_account,
-    string temp_password,
+    const string& temp_account,
+    const string& temp_password,
     bool if_admin,
-    char* temp_sp_code)
+    const char* temp_sp_code)
 {
     // ÒÑÖØ¹¹
-    cache2 = new account_info;
-    cache2->account = std::move(temp_account);
-    cache2->password = std::move(temp_password);
-    cache2->if_admin = if_admin;
-    strcpy_s(cache2->sp_code, temp_sp_code);
-    cache2->next = nullptr;
-    cache2->prev = nullptr;
+    cache_base = new account_info;
+    strcpy(cache_base->account_str, temp_account.c_str());
+    strcpy(cache_base->password_str, temp_password.c_str());
+    cache_base->if_admin = if_admin;
+    strcpy(cache_base->sp_code, temp_sp_code);
     // ²»Òª½â³ı¿Õ¼ä
 }
 
-void account_manager::write_list_to_file_trunc()
+// write_cache_to_file_app
+void account_manager::write_cache_to_file_app() const
 {
     fstream file;
-    file.open(file_location, ios::binary | ios::out | ios::trunc);
-    if (!file.is_open()) {
-        cout << "´ò¿ªaccount_info.datÊ§°Ü£¬¼´½«ÍË³ö³ÌĞò" << endl;
-        Sleep(150);
-        exit(-1);
-    } else {
-        account_info* c;
-        for (c = head; c; c = c->next) {
-            file.write((char*)(c), sizeof(account_info));
-        }
-        file.close();
-        //´ËÊ±cÖ¸¿Õ£¬Ã»±ØÒªdelete
-    }
-}
-
-// write_list_to_file_app
-void account_manager::write_list_to_file_app()
-{
-    fstream file;
-    file.open(file_location, ios::binary | ios::out | ios::app);
+    file.open(file_location, ios::binary | ios::app);
     if (!file.is_open()) {
         cout << "Ğ´ÈëÎÄ¼ş¹ı³ÌÖĞ£¬´ò¿ª account_info.dat Ê§°Ü£¡¼´½«ÍË³ö³ÌĞò ... " << endl;
         Sleep(150);
         exit(-1);
     } else {
-        file.write((char*)(cache2), sizeof(account_info));
+        file.write(reinterpret_cast<char*>(cache_base), sizeof(account_info));
     }
-    delete cache2;
+    // delete cache_base;
     file.close();
 }
 
 // change_account_password_in_file
-void account_manager::change_account_password_in_file(const string& changed_account)
+void account_manager::change_account_password_in_file(const account_info* changed_account) const
 {
     int POS;
     fstream file;
@@ -126,15 +146,15 @@ void account_manager::change_account_password_in_file(const string& changed_acco
         Sleep(150);
         exit(-1);
     }
-    auto* temp = new account_info;
-    while (file.read((char*)(temp), sizeof(account_info))) {
-        if (changed_account == temp->account) {
+    while (!file.eof()) {
+        file.read(reinterpret_cast<char*>(cache_base), sizeof(account_info));
+        if (!strcmp(changed_account->account_str, cache_base->account_str)) {
             POS = file.tellg(); // g => ¶ÁÖ¸Õë
             break;
         }
     }
-    delete temp;
     file.close();
+    strcpy(cache_base->password_str, changed_account->password_str);
     file.open(file_location, ios::binary | ios::out);
     if (!file.is_open()) {
         cout << "ĞŞ¸ÄÃÜÂëÇ°£¬´ò¿ª account_info.dat Ê§°Ü£¡¼´½«ÍË³ö³ÌĞò ... " << endl;
@@ -142,114 +162,94 @@ void account_manager::change_account_password_in_file(const string& changed_acco
         exit(-1);
     }
     file.seekp(POS, ios::beg);
-    file.write((char*)(cache2), sizeof(account_info));
+    file.write(reinterpret_cast<char*>(cache_base), sizeof(account_info));
     file.close();
 }
 
-void account_manager::load_file_to_list()
-{
-    auto* c = new account_info;
-    fstream file;
-    file.open(file_location, ios::in | ios::binary);
-    if (!file.is_open()) {
-        cout << "´ò¿ªaccount_info.datÊ§°Ü£¬¼´½«ÍË³ö³ÌĞò" << endl;
-        Sleep(150);
-        exit(-1);
-    } else {
-        while (file.read((char*)(cache), sizeof(account_info))) {
-            write_account_to_list(
-                c->account,
-                c->password,
-                c->if_admin,
-                c->sp_code);
-        }
-        // delete cache; //¼ÓÉÏ¾Í±¨´í
-        file.close();
-    }
-}
-
-auto account_manager::check_account(
+int account_manager::check_account(
     const string& input_account,
-    const string& input_password) -> int
+    const string& input_password) const
 {
     // È«ĞÂµÄÂß¼­ -- Ö±½Ó´ÓÎÄ¼ş¼ìË÷
     bool if_account_exists = false;
     bool if_password_correct = false;
     int result = -2;
-    cache2 = new account_info;
     fstream file(account_info_file_location, ios::in | ios::binary);
     if (!file.is_open()) {
         cout << "¼ìË÷ÕËºÅĞÅÏ¢Ê±£¬´ò¿ª account_info.dat Ê§°Ü£¡¼´½«ÍË³ö³ÌĞò ... " << endl;
         Sleep(250);
         exit(-1);
     }
-    while (file.read((char*)(cache), sizeof(account_info))) {
-        if (cache2->account == input_account) {
+    // cache_base = new account_info;
+    while (!file.eof()) {
+        file.read(reinterpret_cast<char*>(cache_base), sizeof(account_info));
+        if (!strcmp(cache_base->account_str, input_account.c_str())) {
             if_account_exists = true;
-            if (cache2->password == input_password) {
+            if (!strcmp(cache_base->password_str, input_password.c_str())) {
                 if_password_correct = true;
-                if (cache2->if_admin)
+                if (cache_base->if_admin)
                     result = 1;
                 else
                     result = 0;
+                break;
             }
         }
     }
+    // delete cache_base;
     if (!if_account_exists)
         result = -2;
     else if (!if_password_correct)
         result = -1;
-    delete cache2;
     file.close();
     return result;
 }
 
-account_manager::account_info* account_manager::if_account_exists(const string& temp_account)
+bool account_manager::if_account_exists_new(const string& input) const
 {
-    account_info* c;
-    for (c = head; c; c = c->next) {
-        if (c->account == temp_account) {
+    bool result = false;
+    fstream file;
+    file.open(account_info_file_location, ios::in | ios::binary);
+    if (!file.is_open()) {
+        cout << "¶ÁÈ¡ĞÅÏ¢Ê±£¬´ò¿ª account_info.dat Ê§°Ü£¡¼´½«ÍË³ö³ÌĞò ... " << endl;
+        Sleep(250);
+        exit(-1);
+    }
+    while (!file.eof()) {
+        file.read(reinterpret_cast<char*>(cache_base), sizeof(account_info));
+        if (!strcmp(cache_base->account_str, input.c_str())) {
+            result = true;
             break;
         }
     }
-    return c;
+    file.close();
+    return result;
 }
 
-auto account_manager::generate_sp_code() -> char*
+char* account_manager::generate_sp_code()
 {
-    char* temp = new char[11];
-    uniform_int_distribution<unsigned> u(0, 9);
+    const auto temp = new char[11]; // ÔÚ¶ÑÉÏ´´½¨×Ö·ûÊı×é£¬Ö¸ÕëÎªtemp
+    const uniform_int_distribution<unsigned> u(0, 9);
     default_random_engine e(time(nullptr)); // ÖÖ×Ó=µ±Ç°Ê±¼ä£¬È·±£ÖÖ×Ó²»ÖØÑù£¬È·±£ÕæËæ»úÊıµÄ²úÉú
     for (int i = 0; i < 11; i++) {
-        temp[i] = ('0' + u(e));
+        temp[i] = '0' + u(e);
     }
     temp[10] = '\0';
     return temp;
 }
 
-void account_manager::change_account_in_list(
-    account_manager::account_info* changed_account,
-    string changed_password,
-    char* changed_sp_code)
-{
-    changed_account->password = std::move(changed_password);
-    strcpy_s(changed_account->sp_code, changed_sp_code);
-}
-
 void account_manager::change_account_in_cache(
     account_manager::account_info* changed_account,
-    string changed_password,
-    char* changed_sp_code)
+    const string& changed_password,
+    const char* changed_sp_code)
 {
-    changed_account->password = std::move(changed_password);
-    strcpy_s(changed_account->sp_code, changed_sp_code);
+    strcpy(changed_account->password_str, changed_password.c_str());
+    strcpy(changed_account->sp_code, changed_sp_code);
 }
 
-auto account_manager::if_sp_code_is_correct(
+account_manager::account_info* account_manager::if_sp_code_is_correct(
     const string& temp_account,
-    char* temp_sp_code) -> account_manager::account_info*
+    const char* temp_sp_code) const
 {
-    cache2 = new account_info;
     account_info* result = nullptr;
     fstream account_into_file(account_info_file_location, ios::in | ios::binary);
     if (!account_into_file.is_open()) {
@@ -257,9 +257,12 @@ auto account_manager::if_sp_code_is_correct(
         Sleep(250);
         exit(-1);
     }
-    while (account_into_file.read((char*)(cache), sizeof(account_info))) {
-        if (cache2->account == temp_account && strcmp(cache2->sp_code, temp_sp_code) == 0) {
-            result = cache2;
+    // cache_base = new account_info;
+    while (!account_into_file.eof()) {
+        account_into_file.read(reinterpret_cast<char*>(cache_base), sizeof(account_info));
+        if (strcmp(cache_base->account_str, temp_account.c_str()) == 0
+            && strcmp(cache_base->sp_code, temp_sp_code) == 0) {
+            result = cache_base;
             break;
         }
     }
@@ -267,10 +270,8 @@ auto account_manager::if_sp_code_is_correct(
     return result;
 }
 
-auto account_manager::if_sp_code_exits(char* temp_sp_code) -> account_manager::account_info*
+account_manager::account_info* account_manager::if_sp_code_exists(const char* temp_sp_code) const
 {
-    bool if_found = false;
-    cache2 = new account_info;
     account_info* result = nullptr;
     fstream account_into_file(account_info_file_location, ios::in | ios::binary);
     if (!account_into_file.is_open()) {
@@ -278,10 +279,12 @@ auto account_manager::if_sp_code_exits(char* temp_sp_code) -> account_manager::a
         Sleep(250);
         exit(-1);
     }
-    while (account_into_file.read((char*)(cache2), sizeof(account_info))) {
-        if (strcmp(cache2->sp_code, temp_sp_code) == 0) {
-            if_found = true;
-            result = cache2;
+    // cache_base = new account_info;
+    while (!account_into_file.eof()) {
+        account_into_file.read(reinterpret_cast<char*>(cache_base), sizeof(account_info));
+        if (strcmp(cache_base->sp_code, temp_sp_code) == 0) {
+            bool if_found = true;
+            result = cache_base;
             break;
         }
     }
@@ -290,39 +293,50 @@ auto account_manager::if_sp_code_exits(char* temp_sp_code) -> account_manager::a
 }
 
 // interface-º¯Êı
-auto account_manager::shell_of_account_login() -> int // ĞèÒªÔÚµ÷ÊÔ²ã£¬Ö÷¶¯½øÈë£¬²¢²»»áÔÚ¹¹Ôìº¯ÊıÖĞ½øÈë
+int account_manager::shell_of_account_login()
 {
+    time_manager today;
+    delete cache_base;
+    cache_base = nullptr;
+    cache_base = new account_info;
     int judger = -1;
-    int temp_used_time = get_used_time();
-    if (temp_used_time == 0) { //»¹Î´Ê¹ÓÃ¹ıÈí¼ş
-        first_create_account();
+    if (!if_acct_info_file_have_admin) {
+        // »¹Î´Ê¹ÓÃ¹ıÈí¼ş
+        first_create_admin_account();
     }
-    if (temp_used_time != 0) {
-        // load_file_to_list(); //²»ÊÇµÚÒ»´ÎÊ¹ÓÃ£¬²Å°Ñ"ÕËºÅĞÅÏ¢"µ¼Èë»º´æ
-        // ÖØ¹¹Ö®ºó£¬²»ÓÃÍêÈ«¼ÓÔØÁË£¬DFD [Direct from disk]
-    }
+    cout << endl;
+    cout << "½ñÌìÊÇ >> " << today << endl;
+    cout << endl;
     cout << "»¶Ó­Ê¹ÓÃ [ÒßÇé·À¿ØÒ»Ìå»¯¹ÜÀíÏµÍ³]£¬¼´½«½øÈëµÇÂ¼Ò³Ãæ" << endl
          << endl;
     for (;;) {
         cout << "ÏÂÃæÏÔÊ¾µÇÂ¼Ñ¡Ïî£º" << endl;
         cout << "====================================================" << endl;
-        cout << "     1.Ê¹ÓÃ--ÕËºÅÃÜÂë--µÇÂ¼" << endl;
-        cout << "     2.Ê¹ÓÃ--Æ¾¾İÎÄ¼ş--µÇÂ¼" << endl;
-        cout << "     3.ĞÂ½¨ÕËºÅ" << endl;
-        cout << "     4.Íü¼ÇÃÜÂë/ĞŞ¸ÄÃÜÂë" << endl;
-        cout << "     5.ÔÙ´ÎÏÔÊ¾¹¦ÄÜÁĞ±í" << endl;
-        cout << "     6.È¡ÏûµÇÂ¼²¢ÍË³ö³ÌĞò" << endl;
+        cout << "\t";
+        cout << "1.Ê¹ÓÃ--ÕËºÅÃÜÂë--µÇÂ¼" << endl;
+        cout << "\t";
+        cout << "2.Ê¹ÓÃ--ÕËºÅÆ¾¾İÂë--µÇÂ¼" << endl;
+        cout << "\t";
+        cout << "3.ĞÂ½¨ÕËºÅ" << endl;
+        cout << "\t";
+        cout << "4.Íü¼ÇÃÜÂë/ĞŞ¸ÄÃÜÂë" << endl;
+        cout << "\t";
+        cout << "5.ÔÙ´ÎÏÔÊ¾¹¦ÄÜÁĞ±í" << endl;
+        cout << "\t";
+        cout << "6.È¡ÏûµÇÂ¼²¢ÍË³ö³ÌĞò" << endl;
         cout << "====================================================" << endl;
         cout << "ÇëÊäÈë¶ÔÓ¦ĞòºÅ(ÊäÈë5ÔÙ´ÎÏÔÊ¾¹¦ÄÜÁĞ±í): ";
-        int temp;
+        string temp;
         cin >> temp;
         cout << endl
              << endl;
-        if (temp == 6) { // ÕâÀïÒ²ĞèÒª¸üĞÂ ÕËºÅ¸öÊı ¶ÔÓ¦µÄ ÎÄ¼ş
+        if (temp == "6") {
+            // ÕâÀïÒ²ĞèÒª¸üĞÂ ÕËºÅ¸öÊı ¶ÔÓ¦µÄ ÎÄ¼ş
             cout << "È¡ÏûµÇÂ¼£¬³ÌĞò¼´½«×Ô¶¯ÍË³ö" << endl;
             Sleep(300);
             exit(1);
-        } else if (temp == 1) {
+        }
+        if (temp == "1") {
             judger = sign_in_by_account();
             if (judger == -2) {
                 cout << "²»´æÔÚ¸ÃÕË»§£¬¼´½«ÔÙ´ÎÏÔÊ¾µÇÂ¼Ñ¡Ïî" << endl
@@ -335,28 +349,31 @@ auto account_manager::shell_of_account_login() -> int // ĞèÒªÔÚµ÷ÊÔ²ã£¬Ö÷¶¯½øÈë£
                 Sleep(150);
                 // system("cls"); //ÇåÆÁ
             } else {
+                system("cls"); // ÇåÆÁ
                 break;
             }
-        } else if (temp == 2) {
+        } else if (temp == "2") {
             judger = sign_in_by_sp_code();
             if (judger == -2) {
                 cout << "²»´æÔÚÓëÕâ¸öÆ¾¾İÂëÆ¥ÅäµÄÕË»§£¬¼´½«ÔÙ´ÎÏÔÊ¾µÇÂ¼Ñ¡Ïî" << endl
                      << endl;
                 Sleep(150);
                 // system("cls"); //ÇåÆÁ
-            } else if (judger == -1) { // sp_codeµÇÂ¼£¬²»´æÔÚ·µ»Ø-1µÄÇé¿ö
+            } else if (judger == -1) {
+                // sp_codeµÇÂ¼£¬²»´æÔÚ·µ»Ø-1µÄÇé¿ö
                 cout << "ÕË»§´æÔÚ£¬µ«ÊÇÃÜÂë´íÎó£¡¼´½«ÔÙ´ÎÏÔÊ¾µÇÂ¼Ñ¡Ïî" << endl
                      << endl;
                 Sleep(150);
                 // system("cls"); //ÇåÆÁ
             } else {
+                system("cls"); // ÇåÆÁ
                 break;
             }
-        } else if (temp == 3) {
+        } else if (temp == "3") {
             create_account();
-        } else if (temp == 4) {
+        } else if (temp == "4") {
             change_password();
-        } else if (temp == 5) {
+        } else if (temp == "5") {
             system("cls");
             continue;
         } else {
@@ -366,33 +383,35 @@ auto account_manager::shell_of_account_login() -> int // ĞèÒªÔÚµ÷ÊÔ²ã£¬Ö÷¶¯½øÈë£
             // system("cls"); //ÇåÆÁ
         }
     }
-    delete_list();
     return judger;
 }
 
-void account_manager::first_create_account()
+void account_manager::first_create_admin_account()
 {
     string temp_account;
     string temp_password;
     string temp_password_check;
-    bool if_this_is_admin = true;
+    constexpr bool if_this_is_admin = true;
     bool if_try_again = false;
-    //ÊäÈëĞÅÏ¢
-    cout << "Ê×´ÎÊ¹ÓÃÏµÍ³£¬ÇëÏÈ´´½¨Ò»¸ö¹ÜÀíÔ±ÕËºÅ£¡" << endl;
+    // ÊäÈëĞÅÏ¢
+    cout << "¼ì²âµ½µ±Ç°ÏµÍ³ÖĞÃ»ÓĞ <¹ÜÀíÔ±ÕËºÅ> £¬ÇëÏÈ´´½¨Ò»¸ö¹ÜÀíÔ±ÕËºÅ£¡" << endl;
     while (true) {
-        cout << "ÇëÊäÈë <ÓÃ»§Ãû> £º ";
+        cout << "ÇëÊäÈë <ÕË»§Ãû> (ÖÁÉÙ8Î»£¬ÖÁ¶à16Î»£¬ĞèÒª°üº¬Êı×ÖÓëÓ¢ÎÄ×ÖÄ¸)£º ";
         cin >> temp_account;
-        if (if_account_exists(temp_account)) {
-            system("cls");
+        if (if_account_exists_new(temp_account)) {
+            // system("cls");
             cout << "ÒÑ´æÔÚ¸ÃÕËºÅ£¬ÇëÖØĞÂÊäÈë <ÓÃ»§Ãû> £¡" << endl;
             Sleep(250);
+        } else if (!if_account_legal(temp_account)) {
+            cout << "ÕË»§Ãû²»ºÏ·¨£¡ÇëÖØĞÂÉèÖÃ" << endl;
+            Sleep(150);
         } else {
             break;
         }
     }
     while (true) {
         while (true) {
-            cout << "ÇëÉèÖÃ <ÃÜÂë> (ÖÁÉÙ°ËÎ»£¬°üº¬Êı×ÖÓëÓ¢ÎÄ×ÖÄ¸)£º ";
+            cout << "ÇëÉèÖÃ <ÃÜÂë> (ÖÁÉÙ8Î»£¬ÖÁ¶à24Î»£¬ĞèÒª°üº¬Êı×ÖÓëÓ¢ÎÄ×ÖÄ¸)£º ";
             cin >> temp_password;
             if (if_password_legal(temp_password)) {
                 system("cls"); // ÇåÆÁ£¬ÔÙ´ÎÊäÈëÃÜÂë£¬ºËÑéÊ±£¬ÆÁÄ»ÏÔÊ¾ÃÜÎÄ
@@ -402,9 +421,10 @@ void account_manager::first_create_account()
             }
         }
         while (true) {
+            system("cls"); // ÇåÆÁ£¬ÔÙ´ÎÊäÈëÃÜÂë£¬ºËÑéÊ±£¬ÆÁÄ»ÏÔÊ¾ÃÜÎÄ
             cout << "ÇëÊäÈë¸Õ¸ÕÉèÖÃµÄ <ÃÜÂë> £º ";
-            cin >> temp_password_check; //ĞèÒª¡°ÃÜÎÄÏÔÊ¾¡±
-            if (temp_password_check == temp_password) {
+            // cin >> temp_password_check; //ĞèÒª¡°ÃÜÎÄÏÔÊ¾¡±
+            if (password_input_judger_with_fmt(temp_password)) {
                 cout << "¹ÜÀíÔ±ÕËºÅ´´½¨³É¹¦£¡" << endl
                      << endl;
                 // Sleep(150);
@@ -428,18 +448,13 @@ void account_manager::first_create_account()
             break;
         }
     }
-    //Éú³ÉËæ»úµÄÆ¾¾İÂë
-    char* temp_so_code = generate_sp_code();
-    //´æÈëÁ´±í
-    write_account_to_list(temp_account, temp_password, if_this_is_admin, temp_so_code);
-    //Á´±í´æÈëÎÄ¼ş
-    write_list_to_file_trunc();
-    //¸ù¾İÌõ¼ş£¬Ñ¡ÔñÊÇ·ñ¸üĞÂ¡°¹ÜÀíÔ±ÕËºÅÊıÄ¿¡±
-    if (cache2->if_admin == true)
-        update_used_time();
-    //ĞÂµÄÕËºÅÊıÁ¿Ğ´ÈëÎÄ¼ş
-    write_used_time_into_file();
-    //Õ¹Ê¾Æ¾¾İÂë
+    // Éú³ÉËæ»úµÄÆ¾¾İÂë
+    const char* temp_so_code = generate_sp_code();
+    // ´æÈë»º´æ
+    write_account_to_cache(temp_account, temp_password, if_this_is_admin, temp_so_code);
+    // »º´æ´æÈëÎÄ¼şÎ²²¿
+    write_cache_to_file_app();
+    // Õ¹Ê¾Æ¾¾İÂë
     cout << "ÒÑ´´½¨ÕË»§£¬Éú³ÉµÄÆ¾¾İÂëÎª£º" << temp_so_code << endl;
     cout << "ÇëÎñ±ØÀÎ¼ÇÄúµÄÆ¾¾İÂë£¬Õâ½«ÊÇÄúÕÒ»ØµÄ[¹ÜÀíÔ±ÕË»§<ÃÜÂë>]µÄÎ¨Ò»Æ¾¾İ£¬Ò²½«ÊÇÄúÕÒ»Ø[ÆÕÍ¨ÕË»§<ÃÜÂë>]µÄÖØÒªÆ¾¾İ£¡" << endl;
     cout << "ÀÎ¼ÇÆ¾¾İÂëºó£¬ÊäÈëÈÎÒâ×Ö·û¼ÌĞø >>> ";
@@ -456,7 +471,7 @@ void account_manager::create_account()
     string temp_password_check;
     bool if_this_is_admin;
     bool if_try_again = false;
-    //ÊäÈëĞÅÏ¢
+    // ÊäÈëĞÅÏ¢
     cout << "ÇëÖ¸¶¨´´½¨ÕË»§µÄÀàĞÍ(ÊäÈëA=>¹ÜÀíÔ±£¬ÊäÈëÆäËû×Ö·û=>ÆÕÍ¨ÓÃ»§)£º";
     char temp_judge;
     cin >> temp_judge; // Ö»¶ÁÈëÒ»¸ö×Ö·û
@@ -465,12 +480,15 @@ void account_manager::create_account()
     else
         if_this_is_admin = false;
     while (true) {
-        cout << "ÇëÊäÈë <ÓÃ»§Ãû> £º ";
+        cout << "ÇëÊäÈë <ÕË»§Ãû> (ÖÁÉÙ8Î»£¬ÖÁ¶à16Î»£¬ĞèÒª°üº¬Êı×ÖÓëÓ¢ÎÄ×ÖÄ¸)£º ";
         cin >> temp_account;
-        if (if_account_exists(temp_account)) {
-            system("cls");
+        if (if_account_exists_new(temp_account)) {
+            // system("cls");
             cout << "ÒÑ´æÔÚ¸ÃÕËºÅ£¬ÇëÖØĞÂÊäÈë <ÓÃ»§Ãû> £¡" << endl;
             Sleep(250);
+        } else if (!if_account_legal(temp_account)) {
+            cout << "ÕË»§Ãû²»ºÏ·¨£¡ÇëÖØĞÂÉèÖÃ" << endl;
+            Sleep(150);
         } else {
             break;
         }
@@ -487,9 +505,10 @@ void account_manager::create_account()
             }
         }
         while (true) {
+            system("cls"); // ÇåÆÁ£¬ÔÙ´ÎÊäÈëÃÜÂë£¬ºËÑéÊ±£¬ÆÁÄ»ÏÔÊ¾ÃÜÎÄ
             cout << "ÇëÊäÈë¸Õ¸ÕÉèÖÃµÄ <ÃÜÂë> £º ";
-            cin >> temp_password_check; //ĞèÒª¡°ÃÜÎÄÏÔÊ¾¡±
-            if (temp_password_check == temp_password) {
+            // cin >> temp_password_check; //ĞèÒª¡°ÃÜÎÄÏÔÊ¾¡±
+            if (password_input_judger_with_fmt(temp_password)) {
                 cout << "ÕËºÅ´´½¨³É¹¦£¡" << endl
                      << endl;
                 // Sleep(150);
@@ -514,16 +533,11 @@ void account_manager::create_account()
         }
     }
     // Éú³ÉËæ»úµÄÆ¾¾İÂë
-    char* temp_so_code = generate_sp_code();
+    const char* temp_so_code = generate_sp_code();
     // Ğ´Èëcache
     write_account_to_cache(temp_account, temp_password, if_this_is_admin, temp_so_code);
     // cacheĞ´ÈëÎÄ¼şÎ²²¿
-    write_list_to_file_app();
-    // ¸ù¾İÌõ¼ş¸üĞÂ--¹ÜÀíÔ±ÕËºÅÊıÄ¿
-    if (cache2->if_admin == true)
-        update_used_time();
-    // ĞÂµÄÕËºÅÊıÁ¿Ğ´ÈëÎÄ¼ş
-    write_used_time_into_file();
+    write_cache_to_file_app();
     // Õ¹Ê¾Æ¾¾İÂë
     cout << "ÒÑ´´½¨ÕË»§£¬Éú³ÉµÄÆ¾¾İÂëÎª£º" << temp_so_code << endl;
     cout << "ÇëÎñ±ØÀÎ¼ÇÄúµÄÆ¾¾İÂë£¬Õâ½«ÊÇÄúÕÒ»ØµÄ[¹ÜÀíÔ±ÕË»§<ÃÜÂë>]µÄÎ¨Ò»Æ¾¾İ£¬Ò²½«ÊÇÄúÕÒ»Ø[ÆÕÍ¨ÕË»§<ÃÜÂë>]µÄÖØÒªÆ¾¾İ£¡" << endl;
@@ -531,48 +545,52 @@ void account_manager::create_account()
     char skipper;
     cin >> skipper;
     Sleep(100);
+    cout << "Çë×¢Òâ£¬¸Õ¸ÕĞÂ½¨µÄ¡°ÆÕÍ¨ÓÃ»§¡±ÕËºÅ£¬Ò»¶¨ÒªÏÈµÇÂ¼Ò»´Î£¬Â¼Èë±ØÒªµÄ¸öÈËĞÅÏ¢£¡·ñÔò£¬¸öÈËĞÅÏ¢ÎŞ·¨±»¹ÜÀíÔ±¹ÜÀí£¡" << endl;
+    cout << "ÖªÏ¤ºó£¬Çë°´ÈÎÒâ¼ü¼ÌĞø ... " << endl;
+    _getch();
     system("cls");
 }
 
-auto account_manager::sign_in_by_account() -> int
+int account_manager::sign_in_by_account()
 {
     string temp_account;
-    string temp_password;
-    int temp_result;
     cout << "ÇëÊäÈëÓÃ»§Ãû£º";
     cin >> temp_account;
-    cout << "ÇëÊäÈëÃÜÂë£º";
-    cin >> temp_password;
-    temp_result = check_account(temp_account, temp_password);
+    cout << "ÇëÊäÈëÃÜÂë£º"; // ÃÜÎÄÏÔÊ¾
+    const string temp_password = password_input_with_fmt_then_return_it();
+    const int temp_result = check_account(temp_account, temp_password);
     if (temp_result != -2 && temp_result != -1) {
-        give_the_plug_of_account(temp_account, temp_password);
+        // give_the_plug_of_account(temp_account, temp_password);
+        login = cache_base;
     }
     return temp_result;
 }
 
-auto account_manager::sign_in_by_sp_code() -> int
+int account_manager::sign_in_by_sp_code()
 {
-    // ´ı»áÓÃ cache2£¬¼ÇµÃ½â³ıÕ¼ÓÃ
+    // ´ı»áÓÃ cache_base£¬¼ÇµÃ½â³ıÕ¼ÓÃ
     int temp_result = 0;
     char temp_sp_code[11];
-    account_info* c;
     cout << "ÇëÊäÈë<Æ¾¾İÂë>£º";
     cin >> temp_sp_code;
-    c = if_sp_code_exits(temp_sp_code);
+    const account_info* c = if_sp_code_exists(temp_sp_code);
     if (!c) {
         temp_result = -2;
     } else {
-        give_the_plug_of_account(temp_sp_code);
+        // give_the_plug_of_account(temp_sp_code);
+        login = cache_base;
     }
     if (temp_result != -2) {
         if (c->if_admin)
             temp_result = 1;
     }
-    delete cache2; // ÕâÀïÖÕÓÚ¿ÉÒÔÉ¾³ıÁË
+    // delete cache_base;
+    // delete c;
     return temp_result;
 }
 
-void account_manager::change_password()
+void account_manager::change_password() const
+// Õâ¸öº¯Êı£¬Âß¼­Ì«ÈİÒ×ÂÒÁË
 {
     string temp_account;
     string temp_password;
@@ -585,7 +603,7 @@ void account_manager::change_password()
         while (true) {
             cout << "ÇëÊäÈëÒªĞŞ¸ÄÃÜÂëµÄ <ÓÃ»§Ãû> £º ";
             cin >> temp_account;
-            if (!if_account_exists(temp_account)) {
+            if (!if_account_exists_new(temp_account)) {
                 system("cls");
                 cout << "²»´æÔÚ¸ÃÕËºÅ£¬ÇëÖØĞÂÊäÈë <ÓÃ»§Ãû> £¡" << endl;
                 Sleep(250);
@@ -597,14 +615,14 @@ void account_manager::change_password()
             cout << "ÇëÊäÈë <ÕËºÅ> µÄ <Æ¾¾İÂë> £º";
             cin.width(11);
             cin >> temp_sp_code;
-            temp_account_ptr = if_sp_code_is_correct(temp_account, temp_sp_code); // ÓÃµ½ cache2
+            temp_account_ptr = if_sp_code_is_correct(temp_account, temp_sp_code); // ÓÃµ½ cache_base
             if (temp_account_ptr) {
                 if_go_next = true;
                 break;
             } else {
                 cout << "<Æ¾¾İÂë> ºÍ <ÕËºÅ> ²»Æ¥Åä£¬ÊäÈëY=>ÔÙ´ÎÊäÈë<Æ¾¾İÂë>£¬ÊäÈëÆäËû×Ö·û=>ÖØĞÂÊäÈë<ÓÃ»§Ãû>" << endl;
                 char temp;
-                cin.get(temp);
+                cin >> temp;
                 if (temp == 'y' || temp == 'Y')
                     continue;
                 else {
@@ -618,7 +636,7 @@ void account_manager::change_password()
             break;
     }
     system("cls");
-    cout << "<Æ¾¾İÂë>ºÍ<ÓÃ»§Ãû>³É¹¦Æ¥Åä£¬¼´½«ÔÊĞíÄúÉèÖÃ<ĞÂÃÜÂë>" << endl;
+    cout << "<Æ¾¾İÂë>ºÍ<ÓÃ»§Ãû>³É¹¦Æ¥Åä£¬ÔÊĞíÉèÖÃ<ĞÂÃÜÂë>£¬ÇëÉÔµÈÆ¬¿Ì" << endl;
     Sleep(200);
     while (true) {
         while (true) {
@@ -632,21 +650,21 @@ void account_manager::change_password()
             }
         }
         while (true) {
+            system("cls"); // ÇåÆÁ£¬ÔÙ´ÎÊäÈëÃÜÂë£¬ºËÑéÊ±£¬ÆÁÄ»ÏÔÊ¾ÃÜÎÄ
             cout << "ÇëÊäÈë¸Õ¸ÕÉèÖÃµÄ <ĞÂÃÜÂë> £º ";
-            cin >> temp_password_check; //ĞèÒª¡°ÃÜÎÄÏÔÊ¾¡±
-            if (temp_password_check == temp_password) {
+            // cin >> temp_password_check; //ĞèÒª¡°ÃÜÎÄÏÔÊ¾¡±
+            if (password_input_judger_with_fmt(temp_password)) {
                 system("cls");
                 cout << "ÃÜÂëĞŞ¸Ä³É¹¦" << endl
                      << endl;
+                if_try_again = false;
                 Sleep(150);
                 break;
             } else {
                 cout << "Á½´ÎÊäÈëµÄÃÜÂë²»Ò»ÖÂ£¬°´A=>ÖØĞÂÉèÖÃÃÜÂë£¬ÊäÈëÆäËû×Ö·û=>ÔÙ´Î³¢ÊÔÊäÈë¸Õ¸ÕÉèÖÃµÄĞÂÃÜÂë£º" << endl;
                 char temp;
-                cin.get(temp);
-                if (temp == 'B') {
-                    continue;
-                } else {
+                cin >> temp;
+                if (temp == 'A' || temp == 'a') {
                     if_try_again = true;
                     system("cls");
                     break;
@@ -659,29 +677,28 @@ void account_manager::change_password()
     }
     cout << " == ÃÜÂë¸ü¸Äºó£¬¼´½«Éú³ÉĞÂµÄÆ¾¾İÂë == " << endl;
     // ĞÂÉú³ÉËæ»úµÄÆ¾¾İÂë
-    char* temp_so_code = generate_sp_code();
+    const char* temp_so_code = generate_sp_code();
     // ¸ÄĞ´»º´æ
-    change_account_in_list(temp_account_ptr, temp_password, temp_so_code);
+    change_account_in_cache(temp_account_ptr, temp_password, temp_so_code);
     // ¸ü¸ÄÎÄ¼şÖĞ¶ÔÓ¦µÄÃÜÂë
-    change_account_password_in_file(temp_account);
+    change_account_password_in_file(temp_account_ptr);
     // Õ¹Ê¾Æ¾¾İÂë
     cout << "ÖØĞÂÉú³ÉµÄÆ¾¾İÂëÎª£º" << temp_so_code << endl;
     cout << "ÇëÎñ±ØÀÎ¼ÇÄúµÄÆ¾¾İÂë£¬Õâ½«ÊÇÄúÕÒ»ØµÄ[¹ÜÀíÔ±ÕË»§<ÃÜÂë>]µÄÎ¨Ò»Æ¾¾İ£¬Ò²½«ÊÇÄúÕÒ»Ø[ÆÕÍ¨ÕË»§<ÃÜÂë>]µÄÖØÒªÆ¾¾İ£¡" << endl;
     cout << "ÀÎ¼ÇÆ¾¾İÂëºó£¬ÇëÊäÈëÈÎÒâ×Ö·ûºó¼ÌĞø >>> ";
     char skipper;
     cin >> skipper;
-    delete cache2; // ½â³ıcache2
+    // delete cache_base; // ½â³ı cache_base
     Sleep(100);
     system("cls");
 }
 
-//½Ó¿Úº¯Êı
+// ½Ó¿Úº¯Êı
 void account_manager::give_the_plug_of_account(
     const string& input_account,
     const string& input_password)
 {
     login = new account_info;
-    account_info* c;
     fstream file;
     file.open(file_location, ios::binary | ios::in);
     if (!file.is_open()) {
@@ -689,23 +706,23 @@ void account_manager::give_the_plug_of_account(
         Sleep(150);
         exit(-1);
     }
-    while (file.read((char*)(c), sizeof(account_info))) {
-        if (c->account == input_account) {
-            if (c->password == input_password) {
-                login->account = c->account;
-                login->password = c->password;
-                strcpy_s(login->sp_code, c->sp_code); // unsafeº¯ÊıÓ¦¸Ã½ûÖ¹£¬ËùÒÔÊÇstrcpy_s£¬ÈçÓĞ±¨´í£¬ºóĞø´¦Àí
-                login->if_admin = c->if_admin;
+    account_info* c = new account_info;
+    while (!file.eof()) {
+        file.read(reinterpret_cast<char*>(c), sizeof(account_info));
+        if (strcmp(c->account_str, input_account.c_str()) == 0) {
+            if (strcmp(c->password_str, input_password.c_str()) == 0) {
+                login = c;
                 break;
             }
         }
     }
+    // delete c;
+    file.close();
 }
 
-void account_manager::give_the_plug_of_account(char* input_sp_code)
+void account_manager::give_the_plug_of_account(const char* input_sp_code)
 {
     login = new account_info;
-    account_info* c;
     fstream file;
     file.open(file_location, ios::binary | ios::in);
     if (!file.is_open()) {
@@ -713,38 +730,72 @@ void account_manager::give_the_plug_of_account(char* input_sp_code)
         Sleep(150);
         exit(-1);
     }
-    while (file.read((char*)(c), sizeof(account_info))) {
+    account_info* c = new account_info;
+    while (!file.eof()) {
+        file.read(reinterpret_cast<char*>(c), sizeof(account_info));
         if (strcmp(c->sp_code, input_sp_code) == 0) {
-            login->account = c->account;
-            login->password = c->password;
-            strcpy_s(login->sp_code, c->sp_code); // unsafeº¯ÊıÓ¦¸Ã½ûÖ¹£¬ËùÒÔÊÇstrcpy_s£¬ÈçÓĞ±¨´í£¬ºóĞø´¦Àí
-            login->if_admin = c->if_admin;
-            break;
+            login = c;
         }
     }
+    // delete c;
+    file.close();
 }
 
-//½âÎö½Ó¿Úº¯Êı
-auto account_manager::return_account_name() -> string
+bool account_manager::password_input_judger_with_fmt(const string& judged_str)
 {
-    return login->account;
-}
-auto account_manager::return_account_password() -> string
-{
-    return login->password;
-}
-
-//½â³ıÁ´±í¿Õ¼äÕ¼ÓÃ
-void account_manager::delete_list()
-{
-    account_info* t = head;
-    if ((!t->next) && (!t->prev)) { // ¹Â½Úµã
-        delete t;
-    } else {
-        for (t = tail->prev; t; t = t->prev) {
-            delete t->next;
+    string input;
+    char chr = '\0';
+    while (chr != '\r') { // Î´ÊäÈë »Ø³µ
+        chr = _getch(); // »ñÈ¡¼üÈëµÄ×Ö·û
+        if (chr != '\r' && chr != '\b') { // Î´ÊäÈë ÍË¸ñ / »Ø³µ
+            input += chr; // ×Ö·û´®Î²¸½ÊäÈë×Ö·û
+            cout << '*'; // Êä³ö *
+        } else if (chr == '\b') { // ÊäÈëÁË ÍË¸ñ
+            if (!input.empty()) { // »¹Ã»ÓĞÇå¿Õ
+                cout << "\b \b"; // Çå¿Õ¸Õ¸ÕµÄÒ»¸ö*£¬ÓÃ" "Ìæ´ú
+                input.pop_back(); // ÄÃ×ß×Ö·û´®ÖĞ×îºóÒ»¸ö×Ö·û
+            }
         }
-        // now, t comes to head
-        delete head; // the same to " delete t; "
     }
+    cout << endl;
+    return input == judged_str;
+}
+
+string account_manager::password_input_with_fmt_then_return_it()
+{
+    string input;
+    char chr = '\0';
+    while (chr != '\r') { // Î´ÊäÈë »Ø³µ
+        chr = _getch(); // »ñÈ¡¼üÈëµÄ×Ö·û
+        if (chr != '\r' && chr != '\b') { // Î´ÊäÈë ÍË¸ñ / »Ø³µ
+            input += chr; // ×Ö·û´®Î²¸½ÊäÈë×Ö·û
+            cout << '*'; // Êä³ö *
+        } else if (chr == '\b') { // ÊäÈëÁË ÍË¸ñ
+            if (!input.empty()) { // »¹Ã»ÓĞÇå¿Õ
+                cout << "\b \b"; // Çå¿Õ¸Õ¸ÕµÄÒ»¸ö*£¬ÓÃ" "Ìæ´ú
+                input.pop_back(); // ÄÃ×ß×Ö·û´®ÖĞ×îºóÒ»¸ö×Ö·û
+            }
+        }
+    }
+    cout << endl;
+    return input;
+}
+
+// ½âÎö½Ó¿Úº¯Êı
+string account_manager::return_account_name() const
+{
+    string result = login->account_str;
+    return result;
+}
+
+string account_manager::return_account_password() const
+{
+    string result = login->password_str;
+    return result;
+}
+
+account_manager::~account_manager()
+{
+    delete cache_base;
+    cache_base = nullptr;
 }
